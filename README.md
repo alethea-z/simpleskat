@@ -11,18 +11,25 @@ Provide a mobile-friendly web app that can be opened on Android and used to play
 - Full playable MVP is implemented
 - Browser-tested headless on a mobile viewport
 - Dealer rotates left after each game
+- Rule and browser tests are included
 
 ## Run
 Serve the folder with any static web server:
 
 ```bash
-python3 -m http.server 4173
+npm run serve
 ```
 
 Then open:
 
 ```text
 http://127.0.0.1:4173
+```
+
+## Test
+
+```bash
+npm test
 ```
 
 ## What works

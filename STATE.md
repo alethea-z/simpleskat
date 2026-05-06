@@ -10,8 +10,8 @@
 ## Current phase
 - phase: handoff
 - status: ready
-- goal: build a browser-based SimpleSkat MVP
-- next_action: user testing on Android and feedback collection
+- goal: stabilize SimpleSkat with rule and browser tests
+- next_action: user testing and feedback collection
 
 ## Inputs loaded
 - [x] README.md
@@ -33,13 +33,17 @@
 - Human players: one human, two computer opponents
 - Dealer rotates left after each game
 - AI: simple and deterministic
+- Hand sorting must be descending by strength and suit groups
+- Hidden discard details must not be leaked in the protocol
+- Trick resolution must be rule-correct
+- Eye counting must be verified by tests
 
 ## Open questions
 - 
 
 ## Verification
-- expected_check: full browser game from deal to result
-- last_check: headless browser smoke test on mobile viewport
+- expected_check: full browser game from deal to result plus rule checks
+- last_check: browser and unit regression tests
 - result: passed
 
 ## Handoff note

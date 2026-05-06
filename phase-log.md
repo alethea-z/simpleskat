@@ -4,7 +4,7 @@
 - project: SimpleSkat
 - phase: handoff
 - agent: main
-- input artifact: confirmed project decisions
-- output artifact: browser-tested SimpleSkat MVP
+- input artifact: field feedback on sorting, privacy, trick resolution, and eye accounting
+- output artifact: browser-tested and rule-hardened SimpleSkat MVP
 - blocker: none
-- verification: full headless browser run completed from deal to result; dealer rotation verified; mobile viewport tested
+- verification: unit and browser regression tests passed

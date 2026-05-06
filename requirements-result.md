@@ -14,6 +14,11 @@ Build a browser-based SimpleSkat MVP where one human can play one complete stand
 8. The two computer opponents make deterministic, simple, rule-based decisions.
 9. The app remains usable on an Android smartphone.
 10. The app stays simple and avoids unnecessary visual polish.
+11. The human hand is rendered in descending strength order, grouped by trump/suit order.
+12. The protocol does not reveal hidden discard identities from the skat phase.
+13. Trick winners are always determined by the actual strongest legal card.
+14. The implementation keeps the full deck eye total internally consistent and test-verified.
+15. BDD-style browser regression tests cover the playable MVP flow.
 
 ## Acceptance criteria
 - The app can be opened in a browser and a complete game can be started.
