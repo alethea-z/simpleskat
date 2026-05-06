@@ -8,10 +8,10 @@
 - active_project: simpleskat
 
 ## Current phase
-- phase: planning
-- status: ready
+- phase: implementation
+- status: in progress
 - goal: build a browser-based SimpleSkat MVP
-- next_action: split the MVP into small playable vertical slices
+- next_action: implement bidding, skat handling, trick play, and scoring
 
 ## Inputs loaded
 - [x] README.md
@@ -27,7 +27,12 @@
 - blockers:
 
 ## Decisions made in this run
-- 
+- Delivery: web app
+- Tech: plain JS
+- Game types: Grand, Farbspiel, Null
+- Human players: one human, two computer opponents
+- Dealer rotates left after each game
+- AI: simple and deterministic
 
 ## Open questions
 - 

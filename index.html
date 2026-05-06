@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>SimpleSkat</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <h1>SimpleSkat</h1>
+          <p>Browser-MVP für eine Skat-Runde gegen 2 Computergegner</p>
+        </div>
+        <button id="newGameBtn" class="primary">Neues Spiel</button>
+      </header>
+
+      <section class="status-grid">
+        <article class="card">
+          <h2>Phase</h2>
+          <p id="phaseLabel">—</p>
+        </article>
+        <article class="card">
+          <h2>Runde</h2>
+          <p id="roundLabel">—</p>
+        </article>
+        <article class="card">
+          <h2>Dealer</h2>
+          <p id="dealerLabel">—</p>
+        </article>
+      </section>
+
+      <section class="table card">
+        <div class="table-head">
+          <h2>Tisch</h2>
+          <p id="contractLabel">—</p>
+        </div>
+        <div id="seats" class="seats"></div>
+      </section>
+
+      <section class="card hand-card">
+        <div class="table-head">
+          <h2>Deine Hand</h2>
+          <p id="handCount">0 Karten</p>
+        </div>
+        <div id="hand" class="hand"></div>
+      </section>
+
+      <section class="card log-card">
+        <div class="table-head">
+          <h2>Protokoll</h2>
+        </div>
+        <ol id="log" class="log"></ol>
+      </section>
+    </main>
+  </body>
+</html>

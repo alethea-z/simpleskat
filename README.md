@@ -8,4 +8,8 @@ Provide a mobile-friendly web app that can be opened on Android and used to play
 ## Current status
 - Discovery and requirements are seeded
 - Planning direction is identified
-- Next step: split the MVP into small playable vertical slices
+- Initial mobile-first app scaffold is in place
+- Next step: implement bidding, skat handling, trick play, and scoring
+
+## Run
+Open `index.html` in a browser or serve the folder with any static web server.
