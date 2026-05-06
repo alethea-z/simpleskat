@@ -18,18 +18,12 @@
       </header>
 
       <section class="status-grid">
-        <article class="card">
-          <h2>Phase</h2>
-          <p id="phaseLabel">—</p>
-        </article>
-        <article class="card">
-          <h2>Runde</h2>
-          <p id="roundLabel">—</p>
-        </article>
-        <article class="card">
-          <h2>Dealer</h2>
-          <p id="dealerLabel">—</p>
-        </article>
+        <article class="card"><h2>Phase</h2><p id="phaseLabel">—</p></article>
+        <article class="card"><h2>Runde</h2><p id="roundLabel">—</p></article>
+        <article class="card"><h2>Dealer</h2><p id="dealerLabel">—</p></article>
+        <article class="card"><h2>Bietstand</h2><p id="bidLabel">—</p></article>
+        <article class="card"><h2>Alleinspieler</h2><p id="declarerLabel">—</p></article>
+        <article class="card"><h2>Punkte</h2><p id="scoreLabel">—</p></article>
       </section>
 
       <section class="table card">
@@ -37,7 +31,16 @@
           <h2>Tisch</h2>
           <p id="contractLabel">—</p>
         </div>
+        <p id="trickLabel" class="trick-label">—</p>
         <div id="seats" class="seats"></div>
+      </section>
+
+      <section class="card control-card">
+        <div class="table-head">
+          <h2>Aktionen</h2>
+          <p id="result">—</p>
+        </div>
+        <div id="controls" class="controls"></div>
       </section>
 
       <section class="card hand-card">
@@ -49,9 +52,7 @@
       </section>
 
       <section class="card log-card">
-        <div class="table-head">
-          <h2>Protokoll</h2>
-        </div>
+        <div class="table-head"><h2>Protokoll</h2></div>
         <ol id="log" class="log"></ol>
       </section>
     </main>

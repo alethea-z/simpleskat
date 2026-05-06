@@ -8,10 +8,10 @@
 - active_project: simpleskat
 
 ## Current phase
-- phase: implementation
-- status: in progress
+- phase: handoff
+- status: ready
 - goal: build a browser-based SimpleSkat MVP
-- next_action: implement bidding, skat handling, trick play, and scoring
+- next_action: user testing on Android and feedback collection
 
 ## Inputs loaded
 - [x] README.md
@@ -38,9 +38,9 @@
 - 
 
 ## Verification
-- expected_check:
-- last_check:
-- result:
+- expected_check: full browser game from deal to result
+- last_check: headless browser smoke test on mobile viewport
+- result: passed
 
 ## Handoff note
 - what the next agent must know:

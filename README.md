@@ -8,8 +8,27 @@ Provide a mobile-friendly web app that can be opened on Android and used to play
 ## Current status
 - Discovery and requirements are seeded
 - Planning direction is identified
-- Initial mobile-first app scaffold is in place
-- Next step: implement bidding, skat handling, trick play, and scoring
+- Full playable MVP is implemented
+- Browser-tested headless on a mobile viewport
+- Dealer rotates left after each game
 
 ## Run
-Open `index.html` in a browser or serve the folder with any static web server.
+Serve the folder with any static web server:
+
+```bash
+python3 -m http.server 4173
+```
+
+Then open:
+
+```text
+http://127.0.0.1:4173
+```
+
+## What works
+- bidding phase
+- contract selection
+- skat pickup and discard
+- trick play with legal-move enforcement
+- deterministic computer opponents
+- automatic winner determination

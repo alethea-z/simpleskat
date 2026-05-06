@@ -2,9 +2,9 @@
 
 - timestamp: 2026-05-06
 - project: SimpleSkat
-- phase: implementation
+- phase: handoff
 - agent: main
 - input artifact: confirmed project decisions
-- output artifact: initial web app scaffold
-- blocker: full Skat engine still to be implemented
-- verification: HTTP response and module import both succeeded
+- output artifact: browser-tested SimpleSkat MVP
+- blocker: none
+- verification: full headless browser run completed from deal to result; dealer rotation verified; mobile viewport tested
