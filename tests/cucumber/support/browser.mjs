@@ -1,6 +1,6 @@
 import { BeforeAll, AfterAll, Before, After, AfterStep, setWorldConstructor } from '@cucumber/cucumber';
 import { spawn } from 'node:child_process';
-import { appendFileSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
+import { appendFileSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { resolve, join, basename } from 'node:path';
 import { chromium } from 'playwright';
 
@@ -78,6 +78,7 @@ class BrowserWorld {
     const fileName = `${String(this.stepIndex).padStart(3, '0')}-${slugify(stepText)}.png`;
     const screenshotPath = join(this.scenarioDir, fileName);
     await this.page.screenshot({ path: screenshotPath, fullPage: false });
+    const screenshotFile = join('browser-artifacts/cucumber', basename(this.scenarioDir), fileName).replace(/\\/g, '/');
     appendFileSync(EXECUTION_LOG, `${JSON.stringify({
       feature: this.featureName,
       scenario: this.scenarioName,
@@ -85,7 +86,8 @@ class BrowserWorld {
       stepIndex: this.stepIndex,
       stepText,
       status,
-      screenshotFile: join('browser-artifacts/cucumber', basename(this.scenarioDir), fileName).replace(/\\/g, '/'),
+      screenshotFile,
+      screenshotDataUri: `data:image/png;base64,${readFileSync(screenshotPath).toString('base64')}`,
     })}\n`);
     this.stepIndex += 1;
     return fileName;

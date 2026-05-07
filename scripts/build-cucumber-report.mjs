@@ -25,7 +25,8 @@ function escapeHtml(text) {
     .replaceAll('"', '&quot;');
 }
 
-function screenshotDataUri(screenshotFile) {
+function screenshotDataUri(screenshotFile, screenshotDataUriValue) {
+  if (screenshotDataUriValue) return screenshotDataUriValue;
   const sourcePath = resolve(IMAGE_ROOT, screenshotFile);
   if (!existsSync(sourcePath)) return null;
   const bytes = readFileSync(sourcePath);
@@ -145,7 +146,7 @@ function buildReport(records) {
         ${scenario.background.length ? `<div class="steps" style="margin-bottom:12px;">${scenario.background.map((specStep, index) => {
           const step = scenario.steps[index];
           const keywordClass = String(specStep.keyword || 'given').toLowerCase();
-          const screenshot = step?.screenshotFile ? screenshotDataUri(step.screenshotFile) : '';
+          const screenshot = step?.screenshotFile ? screenshotDataUri(step.screenshotFile, step.screenshotDataUri) : '';
           const rel = step?.screenshotFile ? `./${step.screenshotFile}` : '';
           return `<article class="step">
               <div><span class="kw ${keywordClass}">${escapeHtml(specStep.keyword)}</span><strong>${escapeHtml(specStep.text)}</strong></div>
@@ -157,7 +158,7 @@ function buildReport(records) {
           ${(scenario.scenarioSpec?.steps || scenario.steps.map((_, i) => ({ keyword: 'Then', text: `Step ${i + 1}` }))).map((specStep, index) => {
             const step = scenario.steps[index + scenario.background.length];
             const keywordClass = String(specStep.keyword || 'then').toLowerCase();
-            const screenshot = step?.screenshotFile ? screenshotDataUri(step.screenshotFile) : '';
+            const screenshot = step?.screenshotFile ? screenshotDataUri(step.screenshotFile, step.screenshotDataUri) : '';
             const rel = step?.screenshotFile ? `./${step.screenshotFile}` : '';
             return `
             <article class="step">
