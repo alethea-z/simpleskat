@@ -9,6 +9,7 @@ Last run: 2026-05-07
 - Protocol page test: 1
 - Browser execution test: 1
 - Result: all passed
+- Fresh publish marker: 2026-05-07 11:05 Europe/Berlin
 
 ## BDD specification suite
 - Source: `tests/bdd/*.feature`
