@@ -23,6 +23,7 @@ const el = {
   controls: document.getElementById('controls'),
   log: document.getElementById('log'),
   result: document.getElementById('result'),
+  resultTier: document.getElementById('resultTierLabel'),
   newGameBtn: document.getElementById('newGameBtn'),
 };
 
@@ -106,6 +107,7 @@ function render() {
   el.trick.textContent = game.playStateText();
   el.handCount.textContent = `${game.seats[0].hand.length} Karten`;
   el.result.textContent = game.resultLabel();
+  el.resultTier.textContent = game.resultTierLabel();
 
   el.seats.innerHTML = game.seats
     .map((seat, index) => {
@@ -171,5 +173,92 @@ el.hand.addEventListener('click', (event) => {
     render();
   }
 });
+
+function applyPatch(target, patch) {
+  if (!patch || typeof patch !== 'object') return target;
+  for (const [key, value] of Object.entries(patch)) {
+    if (value && typeof value === 'object' && !Array.isArray(value) && target[key] && typeof target[key] === 'object' && !Array.isArray(target[key])) {
+      applyPatch(target[key], value);
+      continue;
+    }
+    target[key] = value;
+  }
+  return target;
+}
+
+function snapshotGameState() {
+  return {
+    phase: game.phase,
+    phaseLabel: game.phaseLabel(),
+    gameNo: game.gameNo,
+    dealerIndex: game.dealerIndex,
+    currentTurnIndex: game.currentTurnIndex,
+    currentBid: game.currentBid,
+    currentBidLabel: game.currentBidLabel(),
+    highestBidder: game.highestBidder,
+    declarerIndex: game.declarerIndex,
+    contract: game.contract,
+    contractLabel: game.contractLabel(),
+    result: game.result,
+    resultLabel: game.resultLabel(),
+    resultTierLabel: game.resultTierLabel(),
+    scoreLabel: game.scoreLabel(),
+    log: [...game.log],
+    seats: game.seats.map((seat) => ({
+      label: seat.label,
+      role: seat.role,
+      ai: seat.ai,
+      bidCeiling: seat.bidCeiling,
+      hand: seat.hand.map((card) => card.short),
+      trickPoints: seat.trickPoints,
+      tricksWon: seat.tricksWon,
+    })),
+  };
+}
+
+if (typeof window !== 'undefined') {
+  window.__simpleSkatTest = {
+    reset(seed, patch = {}) {
+      game = createGame(seed || seedFromLocation());
+      applyPatch(game, patch);
+      render();
+      return snapshotGameState();
+    },
+    patch(patch = {}) {
+      applyPatch(game, patch);
+      render();
+      return snapshotGameState();
+    },
+    setBidCeilings(map = {}) {
+      const seatMap = { 'Du': 0, 'KI links': 1, 'KI rechts': 2 };
+      for (const [label, ceiling] of Object.entries(map)) {
+        const index = seatMap[label];
+        if (typeof index === 'number') game.seats[index].bidCeiling = Number(ceiling);
+      }
+      render();
+      return snapshotGameState();
+    },
+    setTrickPoints(map = {}) {
+      const seatMap = { 'Du': 0, 'KI links': 1, 'KI rechts': 2 };
+      for (const [label, points] of Object.entries(map)) {
+        const index = seatMap[label];
+        if (typeof index === 'number') game.seats[index].trickPoints = Number(points);
+      }
+      render();
+      return snapshotGameState();
+    },
+    setResult(result) {
+      game.result = result;
+      render();
+      return snapshotGameState();
+    },
+    advance() {
+      game.autoAdvance();
+      render();
+      return snapshotGameState();
+    },
+    snapshot: snapshotGameState,
+  };
+}
 
 render();

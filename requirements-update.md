@@ -8,7 +8,8 @@
 5. BDD-style behavior specifications must cover the supported Skat rule families.
 6. The BDD suite must execute in a browser and capture a screenshot for every test step of the actual Skat application UI.
 7. The first acceptance artifact is a browser-readable HTML test protocol page where all covered rule cases are shown as green/passing.
-8. Tests and deployment must run automatically in GitHub Actions.
+8. The browser report must include the step-by-step execution trace and screenshots from the actual game UI.
+9. Tests and deployment must run automatically in GitHub Actions.
 
 ## Acceptance intent
 - Hand ordering is deterministic and rule-aligned.
@@ -18,3 +19,4 @@
 - The browser flow remains playable on a mobile viewport.
 - The HTML protocol makes the covered rule cases visible and inspectable.
 - Browser screenshots are retained as a published artifact/report and show the actual game UI.
+- The browser report includes the executable step trace, not just the final outcome.

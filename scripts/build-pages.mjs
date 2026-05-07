@@ -21,6 +21,7 @@ await copyPath('tests/protocol.md', 'tests/protocol.md');
 await copyPath('tests/browser-bdd-report.html', 'tests/browser-bdd-report.html');
 await copyPath('tests/browser-bdd-report.json', 'tests/browser-bdd-report.json');
 await copyPath('tests/browser-artifacts', 'tests/browser-artifacts');
+await copyPath('tests/cucumber-execution.ndjson', 'tests/cucumber-execution.ndjson');
 await copyPath('tests/README.md', 'tests/README.md');
 await copyPath('tests/bdd', 'tests/bdd');
 await copyPath('package.json', 'package.json');

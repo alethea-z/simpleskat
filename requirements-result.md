@@ -21,7 +21,8 @@ Build a browser-based SimpleSkat MVP where one human can play one complete stand
 15. BDD-style behavior specifications cover the supported Skat rule families, and their coverage is published in a human-readable protocol.
 16. The BDD suite is executed in a real browser, not only in Node, and each test step captures a screenshot of the actual Skat application UI.
 17. The first acceptance gate is a browser-readable HTML test protocol page where the rule cases are visible as passing/green.
-18. Tests and deployment are automated through GitHub Actions.
+18. The browser report must expose per-step screenshots from the actual Skat UI and a readable execution trace.
+19. Tests and deployment are automated through GitHub Actions.
 
 ## Acceptance criteria
 - The app can be opened in a browser and a complete game can be started.
@@ -34,6 +35,7 @@ Build a browser-based SimpleSkat MVP where one human can play one complete stand
 - The UI is usable on a narrow mobile screen.
 - The supported Skat rule families are visible as passing cases in the HTML test protocol.
 - The browser BDD run captures per-step screenshots from the actual application, not from the protocol page.
+- The browser report exposes an execution trace that mirrors the Cucumber steps.
 
 ## Constraints
 - Plain HTML/CSS/JS for the first pass.
@@ -56,6 +58,7 @@ Build a browser-based SimpleSkat MVP where one human can play one complete stand
 - A browser delivery path for mobile access.
 - A human-readable HTML test protocol page.
 - Browser-based BDD execution with screenshots from the actual game UI.
+- A readable browser execution trace.
 - GitHub Actions automation for tests and deployment.
 
 ## Open questions
@@ -63,6 +66,7 @@ Build a browser-based SimpleSkat MVP where one human can play one complete stand
 - Should the first slice cover a minimal playable skeleton before full rule correctness is implemented?
 - Which supported rule families must be visible in the HTML protocol as green cases before a feature slice can be accepted?
 - Should browser screenshots be retained as deployable artifacts alongside the protocol page, with step-by-step traces from the real game?
+- Should result-tier labels such as Verloren, Schneider, and Schwarz be visible in the UI and in the protocol?
 
 ## Planning boundary
 Plan the MVP as a sequence of small vertical slices, starting with a playable game skeleton and then adding rule-correct phases and scoring. The first acceptance gate for each slice is an HTML test protocol page that shows the covered rule cases in green. Browser execution and screenshot capture are part of the definition of done for regression coverage, and the screenshots must show the real game UI with step-by-step traceability.

@@ -434,6 +434,15 @@ function createGame(seed = defaultSeed()) {
         ? `${this.seatName(this.declarerIndex)} gewinnt`
         : 'Die Gegenspieler gewinnen';
     },
+    resultTierLabel() {
+      if (!this.result) return '—';
+      const declarerPoints = this.result.declarerPoints ?? 0;
+      if (declarerPoints === 0) return 'Verloren';
+      if (declarerPoints >= 120) return 'Schwarz';
+      if (declarerPoints >= 90 || declarerPoints <= 30) return 'Schneider';
+      if (declarerPoints >= 61) return 'Einfach gewonnen';
+      return 'Verloren';
+    },
     logLine(text) {
       this.log.push(text);
     },

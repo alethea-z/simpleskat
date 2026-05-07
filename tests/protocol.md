@@ -14,13 +14,15 @@ Last run: 2026-05-07
 ## BDD specification suite
 - Source: `tests/bdd/*.feature`
 - Executable runner: `tests/bdd/runner.mjs`
-- Browser screenshot runner: `tests/bdd/browser-protocol-screenshots.mjs`
+- Browser BDD scenarios: `tests/cucumber/features/*.feature`
+- Browser glue code: `tests/cucumber/support/browser.mjs` and `tests/cucumber/steps/game.steps.mjs`
 - Coverage summary: `tests/bdd/COVERAGE.md`
 - Browser-readable protocol: `tests/protocol.html`
 - Browser report: `tests/browser-bdd-report.html`
 - Machine-readable status: `tests/protocol.json`
-- Screenshot artifact: `tests/browser-artifacts/screenshots/*.png`
-- Status: executable now, with the current snapshot rendered into the HTML protocol and browser-captured screenshots from the real game UI
+- Screenshot artifact: `tests/browser-artifacts/cucumber/**`
+- Step trace: `tests/cucumber-execution.ndjson`
+- Status: browser-executed now, with the current snapshot rendered into the HTML protocol and per-step screenshots from the real game UI
 
 ## Unit coverage (`tests/skat.unit.test.mjs`)
 1. **Sort order in suit contracts**

@@ -4,10 +4,11 @@
   "description": "A browser-based MVP for playing one complete standard game of Skat against two computer opponents.",
   "type": "module",
   "scripts": {
-    "test": "npm run test:unit && npm run test:bdd && npm run test:protocol && npm run test:bdd:browser && npm run test:browser",
-    "test:ci": "npm run test:unit && npm run test:bdd && npm run test:protocol && npm run test:bdd:browser && npm run test:browser",
+    "test": "npm run test:unit && npm run test:bdd && npm run test:protocol && npm run test:cucumber && npm run test:browser",
+    "test:ci": "npm run test:unit && npm run test:bdd && npm run test:protocol && npm run test:cucumber && npm run test:browser",
     "test:unit": "node --test tests/skat.unit.test.mjs",
     "test:bdd": "node --test tests/bdd-exec.test.mjs",
+    "test:cucumber": "node scripts/run-cucumber-browser.mjs",
     "test:bdd:browser": "node scripts/run-browser-game-report-wrapper.mjs",
     "test:protocol": "node --test tests/protocol.test.mjs",
     "test:browser": "node --test tests/browser.bdd.test.mjs",
@@ -26,6 +27,7 @@
   },
   "homepage": "https://github.com/alethea-z/simpleskat#readme",
   "devDependencies": {
+    "@cucumber/cucumber": "^12.8.2",
     "playwright": "^1.56.1"
   }
 }
