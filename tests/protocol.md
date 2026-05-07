@@ -20,7 +20,7 @@ Last run: 2026-05-07
 - Browser report: `tests/browser-bdd-report.html`
 - Machine-readable status: `tests/protocol.json`
 - Screenshot artifact: `tests/browser-artifacts/screenshots/*.png`
-- Status: executable now, with the current snapshot rendered into the HTML protocol and browser-captured screenshots
+- Status: executable now, with the current snapshot rendered into the HTML protocol and browser-captured screenshots from the real game UI
 
 ## Unit coverage (`tests/skat.unit.test.mjs`)
 1. **Sort order in suit contracts**

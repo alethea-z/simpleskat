@@ -6,9 +6,9 @@
 - `protocol.md` is the human-readable test protocol with the latest coverage summary.
 - `protocol.html` is the browser-readable green-pass snapshot of the current BDD execution.
 - `protocol.json` is the machine-readable execution snapshot used by the protocol page.
-- `browser-bdd-report.html` and `browser-artifacts/screenshots/*.png` are the browser-captured per-case screenshots.
+- `browser-bdd-report.html` and `browser-artifacts/screenshots/*.png` are the browser-captured per-step screenshots from the actual app.
 - `bdd/README.md` defines the BDD approach for this project.
 - `bdd/runner.mjs` executes the feature files against the current model/tests.
-- `bdd/browser-protocol-screenshots.mjs` captures the browser screenshots for the published report.
+- `bdd/browser-protocol-screenshots.mjs` is legacy; the published browser report now comes from `scripts/browser-game-report.mjs` via the container wrapper.
 - `bdd/*.feature` contains the business-facing Skat behavior cases.
 - `bdd/COVERAGE.md` maps the rule areas and case counts.
