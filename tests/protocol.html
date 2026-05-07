@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>SimpleSkat Test Protocol</title>
+    <style>
+      :root { color-scheme: light; --bg:#f7faf7; --panel:#fff; --text:#17301c; --muted:#55705a; --border:#d7e6da; --pass-bg:#e7f8ea; --pass-text:#12632a; --pass-border:#9ed7ab; --shadow:0 8px 24px rgba(17,51,21,.08); }
+      * { box-sizing: border-box; }
+      body { margin:0; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:linear-gradient(180deg,#f4fbf5 0%,var(--bg) 100%); color:var(--text); line-height:1.5; }
+      main { max-width: 1080px; margin: 0 auto; padding: 32px 18px 48px; }
+      header { display:grid; gap:14px; margin-bottom:24px; }
+      h1,h2,h3,p { margin:0; }
+      .eyebrow { font-size:.9rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); font-weight:700; }
+      .title-row { display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between; }
+      .summary { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin:24px 0; }
+      .summary-card,.family { background:var(--panel); border:1px solid var(--border); border-radius:18px; box-shadow:var(--shadow); }
+      .summary-card { padding:16px 18px; }
+      .summary-card .label { color:var(--muted); font-size:.92rem; }
+      .summary-card .value { font-size:1.8rem; font-weight:800; margin-top:4px; }
+      .badge { display:inline-flex; align-items:center; gap:8px; padding:6px 12px; border-radius:999px; border:1px solid var(--pass-border); background:var(--pass-bg); color:var(--pass-text); font-weight:700; font-size:.92rem; }
+      .families { display:grid; gap:16px; }
+      .family { padding:18px; }
+      .family-head { display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between; margin-bottom:10px; }
+      .family h2 { font-size:1.15rem; }
+      .family .status { min-width:fit-content; }
+      .family p.note { color:var(--muted); margin-bottom:12px; }
+      ul { margin:0; padding-left:20px; }
+      li + li { margin-top:4px; }
+      .pass { color: var(--pass-text); }
+      .fail { color: #b91c1c; }
+      .meta { margin-top:24px; color:var(--muted); font-size:.95rem; }
+      .footer { margin-top:16px; padding-top:16px; border-top:1px solid var(--border); color:var(--muted); font-size:.92rem; }
+      code { background:#eef6ef; border:1px solid #ddeade; border-radius:6px; padding:0 6px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="eyebrow">Test protocol</div>
+        <div class="title-row">
+          <div>
+            <h1>SimpleSkat</h1>
+            <p>Executable BDD behavior cases and the current pass snapshot for supported Skat rules.</p>
+          </div>
+          <div class="badge">PASS · 103/103 cases green</div>
+        </div>
+      </header>
+
+      <section class="summary" aria-label="Coverage summary">
+        <article class="summary-card"><div class="label">Feature files</div><div class="value">5</div></article>
+        <article class="summary-card"><div class="label">Executable cases</div><div class="value">103</div></article>
+        <article class="summary-card"><div class="label">Passing cases</div><div class="value">103</div></article>
+        <article class="summary-card"><div class="label">Failing cases</div><div class="value">0</div></article>
+      </section>
+
+      <section class="families" aria-label="Supported rule families">
+        
+    <article class="family">
+      <div class="family-head">
+        <h2>Dealing and bidding in standard Skat</h2>
+        <span class="badge status">PASS</span>
+      </div>
+      <p class="note">60 executable behavior cases from <code>01-dealing-and-bidding.feature</code>.</p>
+      <ul>
+        <li class="pass">✅ Each player receives ten cards and the skat contains two cards</li>
+<li class="pass">✅ The dealer rotates left after a completed game</li>
+<li class="pass">✅ Vorhand starts the auction</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ The auction only accepts the official bid ladder</li>
+<li class="pass">✅ A player who cannot support the next bid must pass</li>
+<li class="pass">✅ The highest surviving bidder becomes declarer</li>
+<li class="pass">✅ The auction ends when the last opposing bidder passes</li>
+<li class="pass">✅ The declarer may choose Grand, Null, or a suit game only</li>
+<li class="pass">✅ Each suit game has the correct base value</li>
+<li class="pass">✅ Each suit game has the correct base value</li>
+<li class="pass">✅ Each suit game has the correct base value</li>
+<li class="pass">✅ Each suit game has the correct base value</li>
+<li class="pass">✅ Hidden information from the skat is not exposed during bidding</li>
+      </ul>
+    </article>
+
+    <article class="family">
+      <div class="family-head">
+        <h2>Contract and trump behavior</h2>
+        <span class="badge status">PASS</span>
+      </div>
+      <p class="note">17 executable behavior cases from <code>02-contract-and-trumps.feature</code>.</p>
+      <ul>
+        <li class="pass">✅ In a suit game, the selected suit becomes trump together with all jacks</li>
+<li class="pass">✅ In a suit game, the selected suit becomes trump together with all jacks</li>
+<li class="pass">✅ In a suit game, the selected suit becomes trump together with all jacks</li>
+<li class="pass">✅ In a suit game, the selected suit becomes trump together with all jacks</li>
+<li class="pass">✅ The jack order in a suit game is Clubs, Spades, Hearts, Diamonds</li>
+<li class="pass">✅ The trump suit cards follow the jack order</li>
+<li class="pass">✅ In Grand, only jacks are trumps</li>
+<li class="pass">✅ In Grand, the jack order is the only trump order</li>
+<li class="pass">✅ In Grand, suit cards retain their suit order outside trump play</li>
+<li class="pass">✅ In Null, there are no trumps</li>
+<li class="pass">✅ In Null, each suit follows the Null order A K Q J 10 9 8 7</li>
+<li class="pass">✅ In Null, each suit follows the Null order A K Q J 10 9 8 7</li>
+<li class="pass">✅ In Null, each suit follows the Null order A K Q J 10 9 8 7</li>
+<li class="pass">✅ In Null, each suit follows the Null order A K Q J 10 9 8 7</li>
+<li class="pass">✅ Null ignores the trump hierarchy from suit and Grand games</li>
+<li class="pass">✅ The human hand is sorted by trump groups before plain suits</li>
+<li class="pass">✅ The protocol does not reveal hidden discard cards while sorting the hand</li>
+      </ul>
+    </article>
+
+    <article class="family">
+      <div class="family-head">
+        <h2>Trick play and legal move behavior</h2>
+        <span class="badge status">PASS</span>
+      </div>
+      <p class="note">12 executable behavior cases from <code>03-trick-play.feature</code>.</p>
+      <ul>
+        <li class="pass">✅ A player must follow the led suit if they can</li>
+<li class="pass">✅ A player may play any card if they cannot follow the led suit</li>
+<li class="pass">✅ In a suit game, trump must be followed if trump is led and available</li>
+<li class="pass">✅ In Grand, a led jack must be followed by a jack if possible</li>
+<li class="pass">✅ In Null, the led suit must be followed if possible</li>
+<li class="pass">✅ The highest legal card wins a suit trick</li>
+<li class="pass">✅ A trump beats every non-trump in a suit game</li>
+<li class="pass">✅ In Grand, the highest jack beats every non-jack</li>
+<li class="pass">✅ In Null, the highest card of the led suit wins</li>
+<li class="pass">✅ The trick winner always leads the next trick</li>
+<li class="pass">✅ An illegal move is rejected and does not advance the trick</li>
+<li class="pass">✅ The play phase ends after ten completed tricks</li>
+      </ul>
+    </article>
+
+    <article class="family">
+      <div class="family-head">
+        <h2>Scoring, winner determination, and result presentation</h2>
+        <span class="badge status">PASS</span>
+      </div>
+      <p class="note">8 executable behavior cases from <code>04-scoring-and-result.feature</code>.</p>
+      <ul>
+        <li class="pass">✅ The full deck always totals 120 eyes</li>
+<li class="pass">✅ Trick points plus skat points still total 120 eyes</li>
+<li class="pass">✅ Declarer wins when reaching 61 eyes or more</li>
+<li class="pass">✅ Defenders win when the declarer stays at 60 eyes or fewer</li>
+<li class="pass">✅ Schneider is reached at 90 eyes or more for the winning side</li>
+<li class="pass">✅ Schwarz is reached when one side takes all tricks</li>
+<li class="pass">✅ The winner is shown automatically after the final trick</li>
+<li class="pass">✅ The result remains inspectable in the project log</li>
+      </ul>
+    </article>
+
+    <article class="family">
+      <div class="family-head">
+        <h2>Privacy and mobile usability</h2>
+        <span class="badge status">PASS</span>
+      </div>
+      <p class="note">6 executable behavior cases from <code>05-privacy-and-usability.feature</code>.</p>
+      <ul>
+        <li class="pass">✅ The skat discard identities are not revealed before the discard is completed</li>
+<li class="pass">✅ Hidden cards are not exposed through the public result text</li>
+<li class="pass">✅ The human hand remains readable on a narrow screen</li>
+<li class="pass">✅ Legal action buttons remain usable on a mobile screen</li>
+<li class="pass">✅ The run log records phase, blocker, and next action</li>
+<li class="pass">✅ A completed feature records the verification outcome</li>
+      </ul>
+    </article>
+      </section>
+
+      <section class="meta">
+        <p>Source of truth: <code>tests/bdd/*.feature</code> plus the executable runner in <code>tests/bdd/runner.mjs</code>.</p>
+        <div class="footer">Open this page on GitHub Pages next to the game to inspect the current test status.</div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,5 +1,13 @@
 import { createGame, contractValueEstimate, makeContract } from './src/game.js';
 
+function seedFromLocation() {
+  try {
+    return new URLSearchParams(window.location.search).get('seed') || undefined;
+  } catch {
+    return undefined;
+  }
+}
+
 const el = {
   phase: document.getElementById('phaseLabel'),
   round: document.getElementById('roundLabel'),
@@ -18,7 +26,7 @@ const el = {
   newGameBtn: document.getElementById('newGameBtn'),
 };
 
-let game = createGame();
+let game = createGame(seedFromLocation());
 
 function seatSummary(seat) {
   return `Karten: ${seat.hand.length} · Punkte: ${seat.trickPoints} · Stiche: ${seat.tricksWon} · Reizen bis ${seat.bidCeiling}`;
@@ -26,7 +34,8 @@ function seatSummary(seat) {
 
 function contractButtonLabel(type, suitKey = null) {
   const contract = makeContract(type, suitKey);
-  const value = game.declarerIndex === null ? contractValueEstimate(contract, game.seats[0].hand) : contractValueEstimate(contract, game.seats[game.declarerIndex].hand);
+  const referenceHand = game.declarerIndex === null ? game.seats[0].hand : game.seats[game.declarerIndex].hand;
+  const value = contractValueEstimate(contract, referenceHand);
   return `${contract.label} (${value})`;
 }
 
@@ -96,7 +105,7 @@ function render() {
   el.contract.textContent = game.contractLabel();
   el.trick.textContent = game.playStateText();
   el.handCount.textContent = `${game.seats[0].hand.length} Karten`;
-  el.result.textContent = game.result ? game.resultLabel() : '—';
+  el.result.textContent = game.resultLabel();
 
   el.seats.innerHTML = game.seats
     .map((seat, index) => {
@@ -112,8 +121,9 @@ function render() {
     })
     .join('');
 
+  const humanHand = game.handCards(0);
   const humanLegal = game.phase === 'play' ? game.legalCardsFor(0) : [];
-  el.hand.innerHTML = game.seats[0].hand
+  el.hand.innerHTML = humanHand
     .map((card) => {
       const selected = game.phase === 'skat' && game.declarerIndex === 0 && game.discardSelection.includes(card.id);
       const playable = game.phase === 'play' && game.currentTurnIndex === 0 && humanLegal.some((entry) => entry.id === card.id);
