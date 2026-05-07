@@ -8,10 +8,10 @@
 - active_project: simpleskat
 
 ## Current phase
-- phase: handoff
-- status: ready
+- phase: implementation
+- status: active
 - goal: stabilize SimpleSkat with rule and browser tests
-- next_action: user testing and feedback collection
+- next_action: continue with the next queued feature slice after the current verification pass; if a feature is finished, restart ideation and implementation on the next feature immediately unless a blocker or explicit stop request appears; keep the GitHub Pages protocol in sync with the BDD report
 
 ## Inputs loaded
 - [x] README.md
@@ -42,10 +42,14 @@
 - 
 
 ## Verification
-- expected_check: full browser game from deal to result plus rule checks
-- last_check: browser and unit regression tests
+- expected_check: full browser game from deal to result plus rule checks plus HTML protocol snapshot
+- last_check: browser, unit, executable BDD, and protocol-page regression tests
 - result: passed
 
 ## Handoff note
 - what the next agent must know:
+  - A passing test suite is not the end of the loop; it is the gate to handoff for the current slice.
+  - After user feedback, resume from the latest STATE and continue with the next planned slice.
+  - Do not stop just because the current slice is green if more planned issues remain.
 - what must not be lost:
+  - rule coverage, hidden-information privacy, and the current test protocol

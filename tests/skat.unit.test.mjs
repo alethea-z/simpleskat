@@ -9,6 +9,7 @@ import {
   sortForUI,
   sumCardPoints,
   legalCards,
+  nextBidValue,
 } from '../src/game.js';
 
 function shortList(cards) {
@@ -71,4 +72,47 @@ test('Given a legal move requirement, when a suit can be followed, then only tha
   ];
 
   assert.deepEqual(shortList(legalCards(hand, trick, contract)), ['A♣']);
+});
+
+test('Given the bid ladder is advanced, when the last step is reached, then the next bid caps at 240', () => {
+  assert.equal(nextBidValue(216), 240);
+  assert.equal(nextBidValue(240), 240);
+});
+
+test('Given a fresh game, when a next game is created, then the dealer rotates left and the round advances', () => {
+  const game = createGame('RotateSeed');
+  const next = game.nextGame();
+
+  assert.equal(next.gameNo, game.gameNo + 1);
+  assert.equal(next.dealerIndex, 1);
+  assert.equal(next.seatName(next.dealerIndex), 'KI links');
+});
+
+test('Given a fresh game, when the point audit runs, then every eye is still accounted for', () => {
+  const game = createGame('AuditSeed');
+  assert.equal(game.pointAudit().dealtPoints, 120);
+});
+
+test('Given a Null trick, when the lead suit can be followed, then only that suit is legal', () => {
+  const contract = makeContract('null');
+  const trick = [{ seatIndex: 1, card: { short: 'A♦', suitKey: 'Diamonds', rankKey: 'A' } }];
+  const hand = [
+    { short: 'A♦', suitKey: 'Diamonds', rankKey: 'A' },
+    { short: 'K♦', suitKey: 'Diamonds', rankKey: 'K' },
+    { short: '7♠', suitKey: 'Spades', rankKey: '7' },
+  ];
+
+  assert.deepEqual(shortList(legalCards(hand, trick, contract)), ['A♦', 'K♦']);
+});
+
+test('Given a suit trick with trump led, when a trump exists in hand, then only trumps are legal', () => {
+  const contract = makeContract('suit', 'Hearts');
+  const trick = [{ seatIndex: 1, card: { short: 'B♥', suitKey: 'Hearts', rankKey: 'J' } }];
+  const hand = [
+    { short: 'A♣', suitKey: 'Clubs', rankKey: 'A' },
+    { short: 'B♠', suitKey: 'Spades', rankKey: 'J' },
+    { short: '7♦', suitKey: 'Diamonds', rankKey: '7' },
+  ];
+
+  assert.deepEqual(shortList(legalCards(hand, trick, contract)), ['B♠']);
 });

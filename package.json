@@ -4,10 +4,14 @@
   "description": "A browser-based MVP for playing one complete standard game of Skat against two computer opponents.",
   "type": "module",
   "scripts": {
-    "test": "npm run test:unit && npm run test:browser",
+    "test": "npm run test:unit && npm run test:bdd && npm run test:protocol && npm run test:browser",
+    "test:ci": "npm run test:unit && npm run test:bdd && npm run test:protocol",
     "test:unit": "node --test tests/skat.unit.test.mjs",
+    "test:bdd": "node --test tests/bdd-exec.test.mjs",
+    "test:protocol": "node --test tests/protocol.test.mjs",
     "test:browser": "node --test tests/browser.bdd.test.mjs",
-    "serve": "node tests/serve.mjs"
+    "serve": "node tests/serve.mjs",
+    "build:pages": "node scripts/build-pages.mjs"
   },
   "repository": {
     "type": "git",

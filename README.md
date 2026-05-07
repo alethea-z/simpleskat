@@ -11,7 +11,7 @@ Provide a mobile-friendly web app that can be opened on Android and used to play
 - Full playable MVP is implemented
 - Browser-tested headless on a mobile viewport
 - Dealer rotates left after each game
-- Rule and browser tests are included
+- Rule tests, browser execution, a dedicated BDD specification suite, and a browser-readable HTML protocol are included
 
 ## Run
 Serve the folder with any static web server:

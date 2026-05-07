@@ -69,9 +69,11 @@ Each state transition should record:
 ## Stop conditions
 Stop the loop when:
 - the next step would repeat without new information
-- the current artifact is ready for human review
+- the current artifact is ready for human review and there is no queued next slice to continue immediately
 - the blocker requires a human decision
 - the context is getting too large for reliable work
+
+If the current slice is green but the plan still has queued work, continue into the next slice instead of idling.
 
 ## Resume rule
 When resuming, read the latest `STATE.md`, the latest phase log, and the last output artifact before continuing.

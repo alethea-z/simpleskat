@@ -18,7 +18,8 @@ Build a browser-based SimpleSkat MVP where one human can play one complete stand
 12. The protocol does not reveal hidden discard identities from the skat phase.
 13. Trick winners are always determined by the actual strongest legal card.
 14. The implementation keeps the full deck eye total internally consistent and test-verified.
-15. BDD-style browser regression tests cover the playable MVP flow.
+15. BDD-style behavior specifications cover the supported Skat rule families, and their coverage is published in a human-readable protocol.
+16. The first acceptance gate is a browser-readable HTML test protocol page where the rule cases are visible as passing/green.
 
 ## Acceptance criteria
 - The app can be opened in a browser and a complete game can be started.
@@ -29,6 +30,7 @@ Build a browser-based SimpleSkat MVP where one human can play one complete stand
 - The winner and final result are shown automatically.
 - The computer players do not require manual prompting.
 - The UI is usable on a narrow mobile screen.
+- The supported Skat rule families are visible as passing cases in the HTML test protocol.
 
 ## Constraints
 - Plain HTML/CSS/JS for the first pass.
@@ -49,10 +51,12 @@ Build a browser-based SimpleSkat MVP where one human can play one complete stand
 - A card / deck model.
 - A deterministic AI heuristic for the two computer players.
 - A browser delivery path for mobile access.
+- A human-readable HTML test protocol page.
 
 ## Open questions
 - How much of the full standard rule book must be supported in the MVP versus deferred as clearly documented limitations?
 - Should the first slice cover a minimal playable skeleton before full rule correctness is implemented?
+- Which supported rule families must be visible in the HTML protocol as green cases before a feature slice can be accepted?
 
 ## Planning boundary
-Plan the MVP as a sequence of small vertical slices, starting with a playable game skeleton and then adding rule-correct phases and scoring.
+Plan the MVP as a sequence of small vertical slices, starting with a playable game skeleton and then adding rule-correct phases and scoring. The first acceptance gate for each slice is an HTML test protocol page that shows the covered rule cases in green.
