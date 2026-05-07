@@ -19,7 +19,9 @@ Build a browser-based SimpleSkat MVP where one human can play one complete stand
 13. Trick winners are always determined by the actual strongest legal card.
 14. The implementation keeps the full deck eye total internally consistent and test-verified.
 15. BDD-style behavior specifications cover the supported Skat rule families, and their coverage is published in a human-readable protocol.
-16. The first acceptance gate is a browser-readable HTML test protocol page where the rule cases are visible as passing/green.
+16. The BDD suite is executed in a real browser, not only in Node, and each test step captures a screenshot.
+17. The first acceptance gate is a browser-readable HTML test protocol page where the rule cases are visible as passing/green.
+18. Tests and deployment are automated through GitHub Actions.
 
 ## Acceptance criteria
 - The app can be opened in a browser and a complete game can be started.
@@ -31,6 +33,7 @@ Build a browser-based SimpleSkat MVP where one human can play one complete stand
 - The computer players do not require manual prompting.
 - The UI is usable on a narrow mobile screen.
 - The supported Skat rule families are visible as passing cases in the HTML test protocol.
+- The browser BDD run captures per-step screenshots.
 
 ## Constraints
 - Plain HTML/CSS/JS for the first pass.
@@ -52,11 +55,14 @@ Build a browser-based SimpleSkat MVP where one human can play one complete stand
 - A deterministic AI heuristic for the two computer players.
 - A browser delivery path for mobile access.
 - A human-readable HTML test protocol page.
+- Browser-based BDD execution with screenshots.
+- GitHub Actions automation for tests and deployment.
 
 ## Open questions
 - How much of the full standard rule book must be supported in the MVP versus deferred as clearly documented limitations?
 - Should the first slice cover a minimal playable skeleton before full rule correctness is implemented?
 - Which supported rule families must be visible in the HTML protocol as green cases before a feature slice can be accepted?
+- Should browser screenshots be retained as deployable artifacts alongside the protocol page?
 
 ## Planning boundary
-Plan the MVP as a sequence of small vertical slices, starting with a playable game skeleton and then adding rule-correct phases and scoring. The first acceptance gate for each slice is an HTML test protocol page that shows the covered rule cases in green.
+Plan the MVP as a sequence of small vertical slices, starting with a playable game skeleton and then adding rule-correct phases and scoring. The first acceptance gate for each slice is an HTML test protocol page that shows the covered rule cases in green. Browser execution and screenshot capture are part of the definition of done for regression coverage.

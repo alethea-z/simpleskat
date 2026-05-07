@@ -11,7 +11,7 @@ Provide a mobile-friendly web app that can be opened on Android and used to play
 - Full playable MVP is implemented
 - Browser-tested headless on a mobile viewport
 - Dealer rotates left after each game
-- Rule tests, browser execution, a dedicated BDD specification suite, and a browser-readable HTML protocol are included
+- Rule tests, browser execution, a dedicated BDD specification suite, browser screenshots, and a browser-readable HTML protocol are included
 
 ## Run
 Serve the folder with any static web server:
@@ -30,6 +30,14 @@ http://127.0.0.1:4173
 
 ```bash
 npm test
+```
+
+## Browser report
+
+Open the browser BDD screenshot report on GitHub Pages:
+
+```text
+https://alethea-z.github.io/simpleskat/tests/browser-bdd-report.html
 ```
 
 ## What works

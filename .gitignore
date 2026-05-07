@@ -1,3 +1,7 @@
 node_modules/
 *.log
 .DS_Store
+dist/
+tests/browser-artifacts/
+tests/browser-bdd-report.html
+tests/browser-bdd-report.json
