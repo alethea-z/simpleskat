@@ -3,17 +3,20 @@
 Last run: 2026-05-07
 
 ## Summary
-- Total executable tests last run: 13
+- Test scripts last run: 4
 - Unit tests: 11
+- BDD cases: 104
 - Protocol page test: 1
 - Browser execution test: 1
 - Result: all passed
 
 ## BDD specification suite
 - Source: `tests/bdd/*.feature`
+- Executable runner: `tests/bdd/runner.mjs`
 - Coverage summary: `tests/bdd/COVERAGE.md`
 - Browser-readable protocol: `tests/protocol.html`
-- Status: written as behavior specifications, not yet bound to a Cucumber runner
+- Machine-readable status: `tests/protocol.json`
+- Status: executable now, with the current snapshot rendered into the HTML protocol
 
 ## Unit coverage (`tests/skat.unit.test.mjs`)
 1. **Sort order in suit contracts**
@@ -53,4 +56,4 @@ Last run: 2026-05-07
 
 ## Current gaps
 - No separate machine-readable per-run archive yet.
-- No scenario-by-scenario BDD report beyond the test file and this protocol summary.
+- No scenario-by-scenario BDD report beyond the executable test runner and this protocol summary.

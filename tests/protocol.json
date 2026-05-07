@@ -1,8 +1,8 @@
 {
   "summary": {
     "featureCount": 5,
-    "scenarioCount": 103,
-    "passCount": 103,
+    "scenarioCount": 104,
+    "passCount": 104,
     "failCount": 0,
     "status": "PASS"
   },
@@ -22,295 +22,301 @@
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "Vorhand starts the auction",
+      "title": "The player left of the dealer speaks first",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "After both opponents finish, the dealer speaks next",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 18 to 20",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 20 to 22",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 22 to 23",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 23 to 24",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 24 to 27",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 27 to 30",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 30 to 33",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 33 to 35",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 35 to 36",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 36 to 40",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 40 to 44",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 44 to 46",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 46 to 48",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 48 to 50",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 50 to 54",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 54 to 55",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 55 to 60",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 60 to 66",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 66 to 70",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 70 to 72",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 72 to 77",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 77 to 80",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 80 to 84",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 84 to 88",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 88 to 90",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 90 to 96",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 96 to 99",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 99 to 100",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 100 to 108",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 108 to 110",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 110 to 121",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 121 to 126",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 126 to 130",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 130 to 132",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 132 to 135",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 135 to 143",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 143 to 144",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 144 to 150",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 150 to 154",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 154 to 160",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 160 to 165",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 165 to 168",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 168 to 176",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 176 to 180",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 180 to 192",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 192 to 204",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "The auction only accepts the official bid ladder",
+      "title": "Bid ladder 204 to 216",
+      "status": "pass"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 216 to 240",
       "status": "pass"
     },
     {
@@ -340,25 +346,25 @@
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "Each suit game has the correct base value",
+      "title": "Suit game base value: Clubs",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "Each suit game has the correct base value",
+      "title": "Suit game base value: Spades",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "Each suit game has the correct base value",
+      "title": "Suit game base value: Hearts",
       "status": "pass"
     },
     {
       "feature": "Dealing and bidding in standard Skat",
       "file": "01-dealing-and-bidding.feature",
-      "title": "Each suit game has the correct base value",
+      "title": "Suit game base value: Diamonds",
       "status": "pass"
     },
     {
@@ -370,25 +376,25 @@
     {
       "feature": "Contract and trump behavior",
       "file": "02-contract-and-trumps.feature",
-      "title": "In a suit game, the selected suit becomes trump together with all jacks",
+      "title": "Suit game trump structure: Clubs",
       "status": "pass"
     },
     {
       "feature": "Contract and trump behavior",
       "file": "02-contract-and-trumps.feature",
-      "title": "In a suit game, the selected suit becomes trump together with all jacks",
+      "title": "Suit game trump structure: Spades",
       "status": "pass"
     },
     {
       "feature": "Contract and trump behavior",
       "file": "02-contract-and-trumps.feature",
-      "title": "In a suit game, the selected suit becomes trump together with all jacks",
+      "title": "Suit game trump structure: Hearts",
       "status": "pass"
     },
     {
       "feature": "Contract and trump behavior",
       "file": "02-contract-and-trumps.feature",
-      "title": "In a suit game, the selected suit becomes trump together with all jacks",
+      "title": "Suit game trump structure: Diamonds",
       "status": "pass"
     },
     {
@@ -430,25 +436,25 @@
     {
       "feature": "Contract and trump behavior",
       "file": "02-contract-and-trumps.feature",
-      "title": "In Null, each suit follows the Null order A K Q J 10 9 8 7",
+      "title": "Null order: Clubs",
       "status": "pass"
     },
     {
       "feature": "Contract and trump behavior",
       "file": "02-contract-and-trumps.feature",
-      "title": "In Null, each suit follows the Null order A K Q J 10 9 8 7",
+      "title": "Null order: Spades",
       "status": "pass"
     },
     {
       "feature": "Contract and trump behavior",
       "file": "02-contract-and-trumps.feature",
-      "title": "In Null, each suit follows the Null order A K Q J 10 9 8 7",
+      "title": "Null order: Hearts",
       "status": "pass"
     },
     {
       "feature": "Contract and trump behavior",
       "file": "02-contract-and-trumps.feature",
-      "title": "In Null, each suit follows the Null order A K Q J 10 9 8 7",
+      "title": "Null order: Diamonds",
       "status": "pass"
     },
     {
@@ -658,74 +664,504 @@
           "examples": []
         },
         {
-          "title": "Vorhand starts the auction",
+          "title": "The player left of the dealer speaks first",
           "outline": false,
           "steps": [
             "the bidding phase begins",
-            "the first active bidder is Vorhand",
+            "the first active bidder is the player left of the dealer",
             "the bidding order proceeds clockwise"
           ],
           "examples": []
         },
         {
-          "title": "The auction only accepts the official bid ladder",
-          "outline": true,
+          "title": "After both opponents finish, the dealer speaks next",
+          "outline": false,
           "steps": [
-            "the current bid is <currentBid>",
-            "the next bid is proposed",
-            "the next legal bid is <nextBid>"
+            "both opponents have passed",
+            "bidding continues",
+            "the dealer becomes the next speaker"
           ],
-          "examples": [
-            "| currentBid | nextBid |",
-            "| 18         | 20      |",
-            "| 20         | 22      |",
-            "| 22         | 23      |",
-            "| 23         | 24      |",
-            "| 24         | 27      |",
-            "| 27         | 30      |",
-            "| 30         | 33      |",
-            "| 33         | 35      |",
-            "| 35         | 36      |",
-            "| 36         | 40      |",
-            "| 40         | 44      |",
-            "| 44         | 46      |",
-            "| 46         | 48      |",
-            "| 48         | 50      |",
-            "| 50         | 54      |",
-            "| 54         | 55      |",
-            "| 55         | 60      |",
-            "| 60         | 66      |",
-            "| 66         | 70      |",
-            "| 70         | 72      |",
-            "| 72         | 77      |",
-            "| 77         | 80      |",
-            "| 80         | 84      |",
-            "| 84         | 88      |",
-            "| 88         | 90      |",
-            "| 90         | 96      |",
-            "| 96         | 99      |",
-            "| 99         | 100     |",
-            "| 100        | 108     |",
-            "| 108        | 110     |",
-            "| 110        | 121     |",
-            "| 121        | 126     |",
-            "| 126        | 130     |",
-            "| 130        | 132     |",
-            "| 132        | 135     |",
-            "| 135        | 143     |",
-            "| 143        | 144     |",
-            "| 144        | 150     |",
-            "| 150        | 154     |",
-            "| 154        | 160     |",
-            "| 160        | 165     |",
-            "| 165        | 168     |",
-            "| 168        | 176     |",
-            "| 176        | 180     |",
-            "| 180        | 192     |",
-            "| 192        | 204     |",
-            "| 204        | 216     |",
-            "| 216        | 240     |"
-          ]
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 18 to 20",
+          "outline": false,
+          "steps": [
+            "the current bid is 18",
+            "the next bid is proposed",
+            "the next legal bid is 20"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 20 to 22",
+          "outline": false,
+          "steps": [
+            "the current bid is 20",
+            "the next bid is proposed",
+            "the next legal bid is 22"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 22 to 23",
+          "outline": false,
+          "steps": [
+            "the current bid is 22",
+            "the next bid is proposed",
+            "the next legal bid is 23"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 23 to 24",
+          "outline": false,
+          "steps": [
+            "the current bid is 23",
+            "the next bid is proposed",
+            "the next legal bid is 24"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 24 to 27",
+          "outline": false,
+          "steps": [
+            "the current bid is 24",
+            "the next bid is proposed",
+            "the next legal bid is 27"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 27 to 30",
+          "outline": false,
+          "steps": [
+            "the current bid is 27",
+            "the next bid is proposed",
+            "the next legal bid is 30"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 30 to 33",
+          "outline": false,
+          "steps": [
+            "the current bid is 30",
+            "the next bid is proposed",
+            "the next legal bid is 33"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 33 to 35",
+          "outline": false,
+          "steps": [
+            "the current bid is 33",
+            "the next bid is proposed",
+            "the next legal bid is 35"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 35 to 36",
+          "outline": false,
+          "steps": [
+            "the current bid is 35",
+            "the next bid is proposed",
+            "the next legal bid is 36"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 36 to 40",
+          "outline": false,
+          "steps": [
+            "the current bid is 36",
+            "the next bid is proposed",
+            "the next legal bid is 40"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 40 to 44",
+          "outline": false,
+          "steps": [
+            "the current bid is 40",
+            "the next bid is proposed",
+            "the next legal bid is 44"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 44 to 46",
+          "outline": false,
+          "steps": [
+            "the current bid is 44",
+            "the next bid is proposed",
+            "the next legal bid is 46"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 46 to 48",
+          "outline": false,
+          "steps": [
+            "the current bid is 46",
+            "the next bid is proposed",
+            "the next legal bid is 48"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 48 to 50",
+          "outline": false,
+          "steps": [
+            "the current bid is 48",
+            "the next bid is proposed",
+            "the next legal bid is 50"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 50 to 54",
+          "outline": false,
+          "steps": [
+            "the current bid is 50",
+            "the next bid is proposed",
+            "the next legal bid is 54"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 54 to 55",
+          "outline": false,
+          "steps": [
+            "the current bid is 54",
+            "the next bid is proposed",
+            "the next legal bid is 55"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 55 to 60",
+          "outline": false,
+          "steps": [
+            "the current bid is 55",
+            "the next bid is proposed",
+            "the next legal bid is 60"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 60 to 66",
+          "outline": false,
+          "steps": [
+            "the current bid is 60",
+            "the next bid is proposed",
+            "the next legal bid is 66"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 66 to 70",
+          "outline": false,
+          "steps": [
+            "the current bid is 66",
+            "the next bid is proposed",
+            "the next legal bid is 70"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 70 to 72",
+          "outline": false,
+          "steps": [
+            "the current bid is 70",
+            "the next bid is proposed",
+            "the next legal bid is 72"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 72 to 77",
+          "outline": false,
+          "steps": [
+            "the current bid is 72",
+            "the next bid is proposed",
+            "the next legal bid is 77"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 77 to 80",
+          "outline": false,
+          "steps": [
+            "the current bid is 77",
+            "the next bid is proposed",
+            "the next legal bid is 80"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 80 to 84",
+          "outline": false,
+          "steps": [
+            "the current bid is 80",
+            "the next bid is proposed",
+            "the next legal bid is 84"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 84 to 88",
+          "outline": false,
+          "steps": [
+            "the current bid is 84",
+            "the next bid is proposed",
+            "the next legal bid is 88"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 88 to 90",
+          "outline": false,
+          "steps": [
+            "the current bid is 88",
+            "the next bid is proposed",
+            "the next legal bid is 90"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 90 to 96",
+          "outline": false,
+          "steps": [
+            "the current bid is 90",
+            "the next bid is proposed",
+            "the next legal bid is 96"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 96 to 99",
+          "outline": false,
+          "steps": [
+            "the current bid is 96",
+            "the next bid is proposed",
+            "the next legal bid is 99"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 99 to 100",
+          "outline": false,
+          "steps": [
+            "the current bid is 99",
+            "the next bid is proposed",
+            "the next legal bid is 100"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 100 to 108",
+          "outline": false,
+          "steps": [
+            "the current bid is 100",
+            "the next bid is proposed",
+            "the next legal bid is 108"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 108 to 110",
+          "outline": false,
+          "steps": [
+            "the current bid is 108",
+            "the next bid is proposed",
+            "the next legal bid is 110"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 110 to 121",
+          "outline": false,
+          "steps": [
+            "the current bid is 110",
+            "the next bid is proposed",
+            "the next legal bid is 121"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 121 to 126",
+          "outline": false,
+          "steps": [
+            "the current bid is 121",
+            "the next bid is proposed",
+            "the next legal bid is 126"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 126 to 130",
+          "outline": false,
+          "steps": [
+            "the current bid is 126",
+            "the next bid is proposed",
+            "the next legal bid is 130"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 130 to 132",
+          "outline": false,
+          "steps": [
+            "the current bid is 130",
+            "the next bid is proposed",
+            "the next legal bid is 132"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 132 to 135",
+          "outline": false,
+          "steps": [
+            "the current bid is 132",
+            "the next bid is proposed",
+            "the next legal bid is 135"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 135 to 143",
+          "outline": false,
+          "steps": [
+            "the current bid is 135",
+            "the next bid is proposed",
+            "the next legal bid is 143"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 143 to 144",
+          "outline": false,
+          "steps": [
+            "the current bid is 143",
+            "the next bid is proposed",
+            "the next legal bid is 144"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 144 to 150",
+          "outline": false,
+          "steps": [
+            "the current bid is 144",
+            "the next bid is proposed",
+            "the next legal bid is 150"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 150 to 154",
+          "outline": false,
+          "steps": [
+            "the current bid is 150",
+            "the next bid is proposed",
+            "the next legal bid is 154"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 154 to 160",
+          "outline": false,
+          "steps": [
+            "the current bid is 154",
+            "the next bid is proposed",
+            "the next legal bid is 160"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 160 to 165",
+          "outline": false,
+          "steps": [
+            "the current bid is 160",
+            "the next bid is proposed",
+            "the next legal bid is 165"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 165 to 168",
+          "outline": false,
+          "steps": [
+            "the current bid is 165",
+            "the next bid is proposed",
+            "the next legal bid is 168"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 168 to 176",
+          "outline": false,
+          "steps": [
+            "the current bid is 168",
+            "the next bid is proposed",
+            "the next legal bid is 176"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 176 to 180",
+          "outline": false,
+          "steps": [
+            "the current bid is 176",
+            "the next bid is proposed",
+            "the next legal bid is 180"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 180 to 192",
+          "outline": false,
+          "steps": [
+            "the current bid is 180",
+            "the next bid is proposed",
+            "the next legal bid is 192"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 192 to 204",
+          "outline": false,
+          "steps": [
+            "the current bid is 192",
+            "the next bid is proposed",
+            "the next legal bid is 204"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 204 to 216",
+          "outline": false,
+          "steps": [
+            "the current bid is 204",
+            "the next bid is proposed",
+            "the next legal bid is 216"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 216 to 240",
+          "outline": false,
+          "steps": [
+            "the current bid is 216",
+            "the next bid is proposed",
+            "the next legal bid is 240"
+          ],
+          "examples": []
         },
         {
           "title": "A player who cannot support the next bid must pass",
@@ -772,20 +1208,44 @@
           "examples": []
         },
         {
-          "title": "Each suit game has the correct base value",
-          "outline": true,
+          "title": "Suit game base value: Clubs",
+          "outline": false,
           "steps": [
-            "the declarer chooses a suit game with trump suit <suit>",
+            "the declarer chooses a suit game with trump suit Clubs",
             "the contract is created",
-            "the base value is <baseValue>"
+            "the base value is 12"
           ],
-          "examples": [
-            "| suit     | baseValue |",
-            "| Clubs    | 12        |",
-            "| Spades   | 11        |",
-            "| Hearts   | 10        |",
-            "| Diamonds | 9         |"
-          ]
+          "examples": []
+        },
+        {
+          "title": "Suit game base value: Spades",
+          "outline": false,
+          "steps": [
+            "the declarer chooses a suit game with trump suit Spades",
+            "the contract is created",
+            "the base value is 11"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Suit game base value: Hearts",
+          "outline": false,
+          "steps": [
+            "the declarer chooses a suit game with trump suit Hearts",
+            "the contract is created",
+            "the base value is 10"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Suit game base value: Diamonds",
+          "outline": false,
+          "steps": [
+            "the declarer chooses a suit game with trump suit Diamonds",
+            "the contract is created",
+            "the base value is 9"
+          ],
+          "examples": []
         },
         {
           "title": "Hidden information from the skat is not exposed during bidding",
@@ -809,21 +1269,48 @@
       ],
       "scenarios": [
         {
-          "title": "In a suit game, the selected suit becomes trump together with all jacks",
-          "outline": true,
+          "title": "Suit game trump structure: Clubs",
+          "outline": false,
           "steps": [
-            "the contract is a suit game with trump suit <suit>",
+            "the contract is a suit game with trump suit Clubs",
             "trump strength is calculated",
             "the jacks are higher than every card of the trump suit",
             "the trump suit cards are higher than every non-trump suit card"
           ],
-          "examples": [
-            "| suit     |",
-            "| Clubs    |",
-            "| Spades   |",
-            "| Hearts   |",
-            "| Diamonds |"
-          ]
+          "examples": []
+        },
+        {
+          "title": "Suit game trump structure: Spades",
+          "outline": false,
+          "steps": [
+            "the contract is a suit game with trump suit Spades",
+            "trump strength is calculated",
+            "the jacks are higher than every card of the trump suit",
+            "the trump suit cards are higher than every non-trump suit card"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Suit game trump structure: Hearts",
+          "outline": false,
+          "steps": [
+            "the contract is a suit game with trump suit Hearts",
+            "trump strength is calculated",
+            "the jacks are higher than every card of the trump suit",
+            "the trump suit cards are higher than every non-trump suit card"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Suit game trump structure: Diamonds",
+          "outline": false,
+          "steps": [
+            "the contract is a suit game with trump suit Diamonds",
+            "trump strength is calculated",
+            "the jacks are higher than every card of the trump suit",
+            "the trump suit cards are higher than every non-trump suit card"
+          ],
+          "examples": []
         },
         {
           "title": "The jack order in a suit game is Clubs, Spades, Hearts, Diamonds",
@@ -901,20 +1388,44 @@
           "examples": []
         },
         {
-          "title": "In Null, each suit follows the Null order A K Q J 10 9 8 7",
-          "outline": true,
+          "title": "Null order: Clubs",
+          "outline": false,
           "steps": [
             "the contract is Null",
-            "the cards of <suit> are ordered",
+            "the cards of Clubs are ordered",
             "the order is Ace, King, Queen, Jack, Ten, Nine, Eight, Seven"
           ],
-          "examples": [
-            "| suit     |",
-            "| Clubs    |",
-            "| Spades   |",
-            "| Hearts   |",
-            "| Diamonds |"
-          ]
+          "examples": []
+        },
+        {
+          "title": "Null order: Spades",
+          "outline": false,
+          "steps": [
+            "the contract is Null",
+            "the cards of Spades are ordered",
+            "the order is Ace, King, Queen, Jack, Ten, Nine, Eight, Seven"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Null order: Hearts",
+          "outline": false,
+          "steps": [
+            "the contract is Null",
+            "the cards of Hearts are ordered",
+            "the order is Ace, King, Queen, Jack, Ten, Nine, Eight, Seven"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Null order: Diamonds",
+          "outline": false,
+          "steps": [
+            "the contract is Null",
+            "the cards of Diamonds are ordered",
+            "the order is Ace, King, Queen, Jack, Ten, Nine, Eight, Seven"
+          ],
+          "examples": []
         },
         {
           "title": "Null ignores the trump hierarchy from suit and Grand games",

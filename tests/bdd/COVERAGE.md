@@ -2,9 +2,9 @@
 
 ## Current size
 - Feature files: 5
-- Behavior scenarios (declarations): 47
-- Example rows inside scenario outlines: 60
-- Total behavior cases represented: 103
+- Behavior scenarios (declarations): 104
+- Scenario outline rows: 0
+- Total behavior cases represented: 104
 
 ## Coverage areas
 
@@ -61,3 +61,4 @@
 - The suite is intentionally written as business-facing behavior, not UI automation.
 - Browser execution is a delivery mechanism, not the definition of BDD.
 - Standard Skat variants outside the MVP scope are not modeled here yet.
+- The bid ladder and contract rules are split into smaller, self-contained scenarios instead of one dense outline.
