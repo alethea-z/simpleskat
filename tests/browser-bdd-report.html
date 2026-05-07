@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SimpleSkat Browser BDD Report</title>
+  <style>
+    :root { color-scheme: light; --bg:#f7faf7; --panel:#fff; --text:#17301c; --muted:#55705a; --border:#d7e6da; --pass-bg:#e7f8ea; --pass-text:#12632a; --pass-border:#9ed7ab; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, sans-serif; background: linear-gradient(180deg, #f4fbf5 0%, var(--bg) 100%); color: var(--text); }
+    main { max-width: 1200px; margin: 0 auto; padding: 28px 18px 48px; }
+    .badge { display:inline-flex; padding:6px 12px; border-radius:999px; border:1px solid var(--pass-border); background:var(--pass-bg); color:var(--pass-text); font-weight:700; }
+    .summary { display:grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap:12px; margin: 20px 0 24px; }
+    .card, .family { background:var(--panel); border:1px solid var(--border); border-radius:18px; padding:16px; }
+    .value { font-size:1.8rem; font-weight:800; margin-top:4px; }
+    .muted { color: var(--muted); }
+    .family { margin-top: 16px; }
+    .family-head { display:flex; justify-content:space-between; gap:12px; align-items:center; margin-bottom:12px; }
+    .thumb-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:12px; }
+    figure { margin:0; border:1px solid var(--border); border-radius:12px; overflow:hidden; background:#fff; }
+    img { width:100%; display:block; }
+    figcaption { padding:10px 12px; font-size:0.92rem; color:var(--muted); }
+    code { background:#eef6ef; border:1px solid #ddeade; border-radius:6px; padding:0 6px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>SimpleSkat Browser BDD Report</h1>
+    <p class="muted">Screenshots captured in the browser for every executable BDD case.</p>
+    <section class="summary">
+      <div class="card"><div class="muted">Feature files</div><div class="value">5</div></div>
+      <div class="card"><div class="muted">Cases</div><div class="value">104</div></div>
+      <div class="card"><div class="muted">Passing</div><div class="value">104</div></div>
+      <div class="card"><div class="muted">Failures</div><div class="value">0</div></div>
+    </section>
+    
+    <section class="family">
+      <div class="family-head">
+        <h2>Dealing and bidding in standard Skat</h2>
+        <span class="badge">PASS · 61/61</span>
+      </div>
+      <div class="thumb-grid">
+        
+          <figure>
+            <img src="./browser-artifacts/screenshots/001-dealing-and-bidding-in-standard-skat-each-player-receives-ten-cards-and-the-skat-contains-two-cards.png" alt="Each player receives ten cards and the skat contains two cards">
+            <figcaption>Each player receives ten cards and the skat contains two cards</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/002-dealing-and-bidding-in-standard-skat-the-dealer-rotates-left-after-a-completed-game.png" alt="The dealer rotates left after a completed game">
+            <figcaption>The dealer rotates left after a completed game</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/003-dealing-and-bidding-in-standard-skat-the-player-left-of-the-dealer-speaks-first.png" alt="The player left of the dealer speaks first">
+            <figcaption>The player left of the dealer speaks first</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/004-dealing-and-bidding-in-standard-skat-after-both-opponents-finish-the-dealer-speaks-next.png" alt="After both opponents finish, the dealer speaks next">
+            <figcaption>After both opponents finish, the dealer speaks next</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/005-dealing-and-bidding-in-standard-skat-bid-ladder-18-to-20.png" alt="Bid ladder 18 to 20">
+            <figcaption>Bid ladder 18 to 20</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/006-dealing-and-bidding-in-standard-skat-bid-ladder-20-to-22.png" alt="Bid ladder 20 to 22">
+            <figcaption>Bid ladder 20 to 22</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/007-dealing-and-bidding-in-standard-skat-bid-ladder-22-to-23.png" alt="Bid ladder 22 to 23">
+            <figcaption>Bid ladder 22 to 23</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/008-dealing-and-bidding-in-standard-skat-bid-ladder-23-to-24.png" alt="Bid ladder 23 to 24">
+            <figcaption>Bid ladder 23 to 24</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/009-dealing-and-bidding-in-standard-skat-bid-ladder-24-to-27.png" alt="Bid ladder 24 to 27">
+            <figcaption>Bid ladder 24 to 27</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/010-dealing-and-bidding-in-standard-skat-bid-ladder-27-to-30.png" alt="Bid ladder 27 to 30">
+            <figcaption>Bid ladder 27 to 30</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/011-dealing-and-bidding-in-standard-skat-bid-ladder-30-to-33.png" alt="Bid ladder 30 to 33">
+            <figcaption>Bid ladder 30 to 33</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/012-dealing-and-bidding-in-standard-skat-bid-ladder-33-to-35.png" alt="Bid ladder 33 to 35">
+            <figcaption>Bid ladder 33 to 35</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/013-dealing-and-bidding-in-standard-skat-bid-ladder-35-to-36.png" alt="Bid ladder 35 to 36">
+            <figcaption>Bid ladder 35 to 36</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/014-dealing-and-bidding-in-standard-skat-bid-ladder-36-to-40.png" alt="Bid ladder 36 to 40">
+            <figcaption>Bid ladder 36 to 40</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/015-dealing-and-bidding-in-standard-skat-bid-ladder-40-to-44.png" alt="Bid ladder 40 to 44">
+            <figcaption>Bid ladder 40 to 44</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/016-dealing-and-bidding-in-standard-skat-bid-ladder-44-to-46.png" alt="Bid ladder 44 to 46">
+            <figcaption>Bid ladder 44 to 46</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/017-dealing-and-bidding-in-standard-skat-bid-ladder-46-to-48.png" alt="Bid ladder 46 to 48">
+            <figcaption>Bid ladder 46 to 48</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/018-dealing-and-bidding-in-standard-skat-bid-ladder-48-to-50.png" alt="Bid ladder 48 to 50">
+            <figcaption>Bid ladder 48 to 50</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/019-dealing-and-bidding-in-standard-skat-bid-ladder-50-to-54.png" alt="Bid ladder 50 to 54">
+            <figcaption>Bid ladder 50 to 54</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/020-dealing-and-bidding-in-standard-skat-bid-ladder-54-to-55.png" alt="Bid ladder 54 to 55">
+            <figcaption>Bid ladder 54 to 55</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/021-dealing-and-bidding-in-standard-skat-bid-ladder-55-to-60.png" alt="Bid ladder 55 to 60">
+            <figcaption>Bid ladder 55 to 60</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/022-dealing-and-bidding-in-standard-skat-bid-ladder-60-to-66.png" alt="Bid ladder 60 to 66">
+            <figcaption>Bid ladder 60 to 66</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/023-dealing-and-bidding-in-standard-skat-bid-ladder-66-to-70.png" alt="Bid ladder 66 to 70">
+            <figcaption>Bid ladder 66 to 70</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/024-dealing-and-bidding-in-standard-skat-bid-ladder-70-to-72.png" alt="Bid ladder 70 to 72">
+            <figcaption>Bid ladder 70 to 72</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/025-dealing-and-bidding-in-standard-skat-bid-ladder-72-to-77.png" alt="Bid ladder 72 to 77">
+            <figcaption>Bid ladder 72 to 77</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/026-dealing-and-bidding-in-standard-skat-bid-ladder-77-to-80.png" alt="Bid ladder 77 to 80">
+            <figcaption>Bid ladder 77 to 80</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/027-dealing-and-bidding-in-standard-skat-bid-ladder-80-to-84.png" alt="Bid ladder 80 to 84">
+            <figcaption>Bid ladder 80 to 84</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/028-dealing-and-bidding-in-standard-skat-bid-ladder-84-to-88.png" alt="Bid ladder 84 to 88">
+            <figcaption>Bid ladder 84 to 88</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/029-dealing-and-bidding-in-standard-skat-bid-ladder-88-to-90.png" alt="Bid ladder 88 to 90">
+            <figcaption>Bid ladder 88 to 90</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/030-dealing-and-bidding-in-standard-skat-bid-ladder-90-to-96.png" alt="Bid ladder 90 to 96">
+            <figcaption>Bid ladder 90 to 96</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/031-dealing-and-bidding-in-standard-skat-bid-ladder-96-to-99.png" alt="Bid ladder 96 to 99">
+            <figcaption>Bid ladder 96 to 99</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/032-dealing-and-bidding-in-standard-skat-bid-ladder-99-to-100.png" alt="Bid ladder 99 to 100">
+            <figcaption>Bid ladder 99 to 100</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/033-dealing-and-bidding-in-standard-skat-bid-ladder-100-to-108.png" alt="Bid ladder 100 to 108">
+            <figcaption>Bid ladder 100 to 108</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/034-dealing-and-bidding-in-standard-skat-bid-ladder-108-to-110.png" alt="Bid ladder 108 to 110">
+            <figcaption>Bid ladder 108 to 110</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/035-dealing-and-bidding-in-standard-skat-bid-ladder-110-to-121.png" alt="Bid ladder 110 to 121">
+            <figcaption>Bid ladder 110 to 121</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/036-dealing-and-bidding-in-standard-skat-bid-ladder-121-to-126.png" alt="Bid ladder 121 to 126">
+            <figcaption>Bid ladder 121 to 126</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/037-dealing-and-bidding-in-standard-skat-bid-ladder-126-to-130.png" alt="Bid ladder 126 to 130">
+            <figcaption>Bid ladder 126 to 130</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/038-dealing-and-bidding-in-standard-skat-bid-ladder-130-to-132.png" alt="Bid ladder 130 to 132">
+            <figcaption>Bid ladder 130 to 132</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/039-dealing-and-bidding-in-standard-skat-bid-ladder-132-to-135.png" alt="Bid ladder 132 to 135">
+            <figcaption>Bid ladder 132 to 135</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/040-dealing-and-bidding-in-standard-skat-bid-ladder-135-to-143.png" alt="Bid ladder 135 to 143">
+            <figcaption>Bid ladder 135 to 143</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/041-dealing-and-bidding-in-standard-skat-bid-ladder-143-to-144.png" alt="Bid ladder 143 to 144">
+            <figcaption>Bid ladder 143 to 144</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/042-dealing-and-bidding-in-standard-skat-bid-ladder-144-to-150.png" alt="Bid ladder 144 to 150">
+            <figcaption>Bid ladder 144 to 150</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/043-dealing-and-bidding-in-standard-skat-bid-ladder-150-to-154.png" alt="Bid ladder 150 to 154">
+            <figcaption>Bid ladder 150 to 154</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/044-dealing-and-bidding-in-standard-skat-bid-ladder-154-to-160.png" alt="Bid ladder 154 to 160">
+            <figcaption>Bid ladder 154 to 160</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/045-dealing-and-bidding-in-standard-skat-bid-ladder-160-to-165.png" alt="Bid ladder 160 to 165">
+            <figcaption>Bid ladder 160 to 165</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/046-dealing-and-bidding-in-standard-skat-bid-ladder-165-to-168.png" alt="Bid ladder 165 to 168">
+            <figcaption>Bid ladder 165 to 168</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/047-dealing-and-bidding-in-standard-skat-bid-ladder-168-to-176.png" alt="Bid ladder 168 to 176">
+            <figcaption>Bid ladder 168 to 176</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/048-dealing-and-bidding-in-standard-skat-bid-ladder-176-to-180.png" alt="Bid ladder 176 to 180">
+            <figcaption>Bid ladder 176 to 180</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/049-dealing-and-bidding-in-standard-skat-bid-ladder-180-to-192.png" alt="Bid ladder 180 to 192">
+            <figcaption>Bid ladder 180 to 192</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/050-dealing-and-bidding-in-standard-skat-bid-ladder-192-to-204.png" alt="Bid ladder 192 to 204">
+            <figcaption>Bid ladder 192 to 204</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/051-dealing-and-bidding-in-standard-skat-bid-ladder-204-to-216.png" alt="Bid ladder 204 to 216">
+            <figcaption>Bid ladder 204 to 216</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/052-dealing-and-bidding-in-standard-skat-bid-ladder-216-to-240.png" alt="Bid ladder 216 to 240">
+            <figcaption>Bid ladder 216 to 240</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/053-dealing-and-bidding-in-standard-skat-a-player-who-cannot-support-the-next-bid-must-pass.png" alt="A player who cannot support the next bid must pass">
+            <figcaption>A player who cannot support the next bid must pass</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/054-dealing-and-bidding-in-standard-skat-the-highest-surviving-bidder-becomes-declarer.png" alt="The highest surviving bidder becomes declarer">
+            <figcaption>The highest surviving bidder becomes declarer</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/055-dealing-and-bidding-in-standard-skat-the-auction-ends-when-the-last-opposing-bidder-passes.png" alt="The auction ends when the last opposing bidder passes">
+            <figcaption>The auction ends when the last opposing bidder passes</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/056-dealing-and-bidding-in-standard-skat-the-declarer-may-choose-grand-null-or-a-suit-game-only.png" alt="The declarer may choose Grand, Null, or a suit game only">
+            <figcaption>The declarer may choose Grand, Null, or a suit game only</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/057-dealing-and-bidding-in-standard-skat-suit-game-base-value-clubs.png" alt="Suit game base value: Clubs">
+            <figcaption>Suit game base value: Clubs</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/058-dealing-and-bidding-in-standard-skat-suit-game-base-value-spades.png" alt="Suit game base value: Spades">
+            <figcaption>Suit game base value: Spades</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/059-dealing-and-bidding-in-standard-skat-suit-game-base-value-hearts.png" alt="Suit game base value: Hearts">
+            <figcaption>Suit game base value: Hearts</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/060-dealing-and-bidding-in-standard-skat-suit-game-base-value-diamonds.png" alt="Suit game base value: Diamonds">
+            <figcaption>Suit game base value: Diamonds</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/061-dealing-and-bidding-in-standard-skat-hidden-information-from-the-skat-is-not-exposed-during-bidding.png" alt="Hidden information from the skat is not exposed during bidding">
+            <figcaption>Hidden information from the skat is not exposed during bidding</figcaption>
+          </figure>
+        
+      </div>
+    </section>
+
+    <section class="family">
+      <div class="family-head">
+        <h2>Contract and trump behavior</h2>
+        <span class="badge">PASS · 17/17</span>
+      </div>
+      <div class="thumb-grid">
+        
+          <figure>
+            <img src="./browser-artifacts/screenshots/062-contract-and-trump-behavior-suit-game-trump-structure-clubs.png" alt="Suit game trump structure: Clubs">
+            <figcaption>Suit game trump structure: Clubs</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/063-contract-and-trump-behavior-suit-game-trump-structure-spades.png" alt="Suit game trump structure: Spades">
+            <figcaption>Suit game trump structure: Spades</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/064-contract-and-trump-behavior-suit-game-trump-structure-hearts.png" alt="Suit game trump structure: Hearts">
+            <figcaption>Suit game trump structure: Hearts</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/065-contract-and-trump-behavior-suit-game-trump-structure-diamonds.png" alt="Suit game trump structure: Diamonds">
+            <figcaption>Suit game trump structure: Diamonds</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/066-contract-and-trump-behavior-the-jack-order-in-a-suit-game-is-clubs-spades-hearts-diamonds.png" alt="The jack order in a suit game is Clubs, Spades, Hearts, Diamonds">
+            <figcaption>The jack order in a suit game is Clubs, Spades, Hearts, Diamonds</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/067-contract-and-trump-behavior-the-trump-suit-cards-follow-the-jack-order.png" alt="The trump suit cards follow the jack order">
+            <figcaption>The trump suit cards follow the jack order</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/068-contract-and-trump-behavior-in-grand-only-jacks-are-trumps.png" alt="In Grand, only jacks are trumps">
+            <figcaption>In Grand, only jacks are trumps</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/069-contract-and-trump-behavior-in-grand-the-jack-order-is-the-only-trump-order.png" alt="In Grand, the jack order is the only trump order">
+            <figcaption>In Grand, the jack order is the only trump order</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/070-contract-and-trump-behavior-in-grand-suit-cards-retain-their-suit-order-outside-trump-play.png" alt="In Grand, suit cards retain their suit order outside trump play">
+            <figcaption>In Grand, suit cards retain their suit order outside trump play</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/071-contract-and-trump-behavior-in-null-there-are-no-trumps.png" alt="In Null, there are no trumps">
+            <figcaption>In Null, there are no trumps</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/072-contract-and-trump-behavior-null-order-clubs.png" alt="Null order: Clubs">
+            <figcaption>Null order: Clubs</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/073-contract-and-trump-behavior-null-order-spades.png" alt="Null order: Spades">
+            <figcaption>Null order: Spades</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/074-contract-and-trump-behavior-null-order-hearts.png" alt="Null order: Hearts">
+            <figcaption>Null order: Hearts</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/075-contract-and-trump-behavior-null-order-diamonds.png" alt="Null order: Diamonds">
+            <figcaption>Null order: Diamonds</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/076-contract-and-trump-behavior-null-ignores-the-trump-hierarchy-from-suit-and-grand-games.png" alt="Null ignores the trump hierarchy from suit and Grand games">
+            <figcaption>Null ignores the trump hierarchy from suit and Grand games</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/077-contract-and-trump-behavior-the-human-hand-is-sorted-by-trump-groups-before-plain-suits.png" alt="The human hand is sorted by trump groups before plain suits">
+            <figcaption>The human hand is sorted by trump groups before plain suits</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/078-contract-and-trump-behavior-the-protocol-does-not-reveal-hidden-discard-cards-while-sorting-the-hand.png" alt="The protocol does not reveal hidden discard cards while sorting the hand">
+            <figcaption>The protocol does not reveal hidden discard cards while sorting the hand</figcaption>
+          </figure>
+        
+      </div>
+    </section>
+
+    <section class="family">
+      <div class="family-head">
+        <h2>Trick play and legal move behavior</h2>
+        <span class="badge">PASS · 12/12</span>
+      </div>
+      <div class="thumb-grid">
+        
+          <figure>
+            <img src="./browser-artifacts/screenshots/079-trick-play-and-legal-move-behavior-a-player-must-follow-the-led-suit-if-they-can.png" alt="A player must follow the led suit if they can">
+            <figcaption>A player must follow the led suit if they can</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/080-trick-play-and-legal-move-behavior-a-player-may-play-any-card-if-they-cannot-follow-the-led-suit.png" alt="A player may play any card if they cannot follow the led suit">
+            <figcaption>A player may play any card if they cannot follow the led suit</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/081-trick-play-and-legal-move-behavior-in-a-suit-game-trump-must-be-followed-if-trump-is-led-and-available.png" alt="In a suit game, trump must be followed if trump is led and available">
+            <figcaption>In a suit game, trump must be followed if trump is led and available</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/082-trick-play-and-legal-move-behavior-in-grand-a-led-jack-must-be-followed-by-a-jack-if-possible.png" alt="In Grand, a led jack must be followed by a jack if possible">
+            <figcaption>In Grand, a led jack must be followed by a jack if possible</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/083-trick-play-and-legal-move-behavior-in-null-the-led-suit-must-be-followed-if-possible.png" alt="In Null, the led suit must be followed if possible">
+            <figcaption>In Null, the led suit must be followed if possible</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/084-trick-play-and-legal-move-behavior-the-highest-legal-card-wins-a-suit-trick.png" alt="The highest legal card wins a suit trick">
+            <figcaption>The highest legal card wins a suit trick</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/085-trick-play-and-legal-move-behavior-a-trump-beats-every-non-trump-in-a-suit-game.png" alt="A trump beats every non-trump in a suit game">
+            <figcaption>A trump beats every non-trump in a suit game</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/086-trick-play-and-legal-move-behavior-in-grand-the-highest-jack-beats-every-non-jack.png" alt="In Grand, the highest jack beats every non-jack">
+            <figcaption>In Grand, the highest jack beats every non-jack</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/087-trick-play-and-legal-move-behavior-in-null-the-highest-card-of-the-led-suit-wins.png" alt="In Null, the highest card of the led suit wins">
+            <figcaption>In Null, the highest card of the led suit wins</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/088-trick-play-and-legal-move-behavior-the-trick-winner-always-leads-the-next-trick.png" alt="The trick winner always leads the next trick">
+            <figcaption>The trick winner always leads the next trick</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/089-trick-play-and-legal-move-behavior-an-illegal-move-is-rejected-and-does-not-advance-the-trick.png" alt="An illegal move is rejected and does not advance the trick">
+            <figcaption>An illegal move is rejected and does not advance the trick</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/090-trick-play-and-legal-move-behavior-the-play-phase-ends-after-ten-completed-tricks.png" alt="The play phase ends after ten completed tricks">
+            <figcaption>The play phase ends after ten completed tricks</figcaption>
+          </figure>
+        
+      </div>
+    </section>
+
+    <section class="family">
+      <div class="family-head">
+        <h2>Scoring, winner determination, and result presentation</h2>
+        <span class="badge">PASS · 8/8</span>
+      </div>
+      <div class="thumb-grid">
+        
+          <figure>
+            <img src="./browser-artifacts/screenshots/091-scoring-winner-determination-and-result-presentation-the-full-deck-always-totals-120-eyes.png" alt="The full deck always totals 120 eyes">
+            <figcaption>The full deck always totals 120 eyes</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/092-scoring-winner-determination-and-result-presentation-trick-points-plus-skat-points-still-total-120-eyes.png" alt="Trick points plus skat points still total 120 eyes">
+            <figcaption>Trick points plus skat points still total 120 eyes</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/093-scoring-winner-determination-and-result-presentation-declarer-wins-when-reaching-61-eyes-or-more.png" alt="Declarer wins when reaching 61 eyes or more">
+            <figcaption>Declarer wins when reaching 61 eyes or more</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/094-scoring-winner-determination-and-result-presentation-defenders-win-when-the-declarer-stays-at-60-eyes-or-fewer.png" alt="Defenders win when the declarer stays at 60 eyes or fewer">
+            <figcaption>Defenders win when the declarer stays at 60 eyes or fewer</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/095-scoring-winner-determination-and-result-presentation-schneider-is-reached-at-90-eyes-or-more-for-the-winning-side.png" alt="Schneider is reached at 90 eyes or more for the winning side">
+            <figcaption>Schneider is reached at 90 eyes or more for the winning side</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/096-scoring-winner-determination-and-result-presentation-schwarz-is-reached-when-one-side-takes-all-tricks.png" alt="Schwarz is reached when one side takes all tricks">
+            <figcaption>Schwarz is reached when one side takes all tricks</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/097-scoring-winner-determination-and-result-presentation-the-winner-is-shown-automatically-after-the-final-trick.png" alt="The winner is shown automatically after the final trick">
+            <figcaption>The winner is shown automatically after the final trick</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/098-scoring-winner-determination-and-result-presentation-the-result-remains-inspectable-in-the-project-log.png" alt="The result remains inspectable in the project log">
+            <figcaption>The result remains inspectable in the project log</figcaption>
+          </figure>
+        
+      </div>
+    </section>
+
+    <section class="family">
+      <div class="family-head">
+        <h2>Privacy and mobile usability</h2>
+        <span class="badge">PASS · 6/6</span>
+      </div>
+      <div class="thumb-grid">
+        
+          <figure>
+            <img src="./browser-artifacts/screenshots/099-privacy-and-mobile-usability-the-skat-discard-identities-are-not-revealed-before-the-discard-is-completed.png" alt="The skat discard identities are not revealed before the discard is completed">
+            <figcaption>The skat discard identities are not revealed before the discard is completed</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/100-privacy-and-mobile-usability-hidden-cards-are-not-exposed-through-the-public-result-text.png" alt="Hidden cards are not exposed through the public result text">
+            <figcaption>Hidden cards are not exposed through the public result text</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/101-privacy-and-mobile-usability-the-human-hand-remains-readable-on-a-narrow-screen.png" alt="The human hand remains readable on a narrow screen">
+            <figcaption>The human hand remains readable on a narrow screen</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/102-privacy-and-mobile-usability-legal-action-buttons-remain-usable-on-a-mobile-screen.png" alt="Legal action buttons remain usable on a mobile screen">
+            <figcaption>Legal action buttons remain usable on a mobile screen</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/103-privacy-and-mobile-usability-the-run-log-records-phase-blocker-and-next-action.png" alt="The run log records phase, blocker, and next action">
+            <figcaption>The run log records phase, blocker, and next action</figcaption>
+          </figure>
+        
+
+          <figure>
+            <img src="./browser-artifacts/screenshots/104-privacy-and-mobile-usability-a-completed-feature-records-the-verification-outcome.png" alt="A completed feature records the verification outcome">
+            <figcaption>A completed feature records the verification outcome</figcaption>
+          </figure>
+        
+      </div>
+    </section>
+    <p class="muted" style="margin-top:20px;">Source: <code>tests/protocol.json</code> and <code>tests/browser-artifacts/screenshots</code>.</p>
+  </main>
+</body>
+</html>

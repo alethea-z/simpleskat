@@ -1,0 +1,1877 @@
+{
+  "summary": {
+    "featureCount": 5,
+    "scenarioCount": 104,
+    "passCount": 104,
+    "failCount": 0,
+    "status": "PASS"
+  },
+  "cases": [
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Each player receives ten cards and the skat contains two cards",
+      "status": "pass",
+      "screenshotFile": "001-dealing-and-bidding-in-standard-skat-each-player-receives-ten-cards-and-the-skat-contains-two-cards.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "The dealer rotates left after a completed game",
+      "status": "pass",
+      "screenshotFile": "002-dealing-and-bidding-in-standard-skat-the-dealer-rotates-left-after-a-completed-game.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "The player left of the dealer speaks first",
+      "status": "pass",
+      "screenshotFile": "003-dealing-and-bidding-in-standard-skat-the-player-left-of-the-dealer-speaks-first.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "After both opponents finish, the dealer speaks next",
+      "status": "pass",
+      "screenshotFile": "004-dealing-and-bidding-in-standard-skat-after-both-opponents-finish-the-dealer-speaks-next.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 18 to 20",
+      "status": "pass",
+      "screenshotFile": "005-dealing-and-bidding-in-standard-skat-bid-ladder-18-to-20.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 20 to 22",
+      "status": "pass",
+      "screenshotFile": "006-dealing-and-bidding-in-standard-skat-bid-ladder-20-to-22.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 22 to 23",
+      "status": "pass",
+      "screenshotFile": "007-dealing-and-bidding-in-standard-skat-bid-ladder-22-to-23.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 23 to 24",
+      "status": "pass",
+      "screenshotFile": "008-dealing-and-bidding-in-standard-skat-bid-ladder-23-to-24.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 24 to 27",
+      "status": "pass",
+      "screenshotFile": "009-dealing-and-bidding-in-standard-skat-bid-ladder-24-to-27.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 27 to 30",
+      "status": "pass",
+      "screenshotFile": "010-dealing-and-bidding-in-standard-skat-bid-ladder-27-to-30.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 30 to 33",
+      "status": "pass",
+      "screenshotFile": "011-dealing-and-bidding-in-standard-skat-bid-ladder-30-to-33.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 33 to 35",
+      "status": "pass",
+      "screenshotFile": "012-dealing-and-bidding-in-standard-skat-bid-ladder-33-to-35.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 35 to 36",
+      "status": "pass",
+      "screenshotFile": "013-dealing-and-bidding-in-standard-skat-bid-ladder-35-to-36.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 36 to 40",
+      "status": "pass",
+      "screenshotFile": "014-dealing-and-bidding-in-standard-skat-bid-ladder-36-to-40.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 40 to 44",
+      "status": "pass",
+      "screenshotFile": "015-dealing-and-bidding-in-standard-skat-bid-ladder-40-to-44.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 44 to 46",
+      "status": "pass",
+      "screenshotFile": "016-dealing-and-bidding-in-standard-skat-bid-ladder-44-to-46.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 46 to 48",
+      "status": "pass",
+      "screenshotFile": "017-dealing-and-bidding-in-standard-skat-bid-ladder-46-to-48.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 48 to 50",
+      "status": "pass",
+      "screenshotFile": "018-dealing-and-bidding-in-standard-skat-bid-ladder-48-to-50.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 50 to 54",
+      "status": "pass",
+      "screenshotFile": "019-dealing-and-bidding-in-standard-skat-bid-ladder-50-to-54.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 54 to 55",
+      "status": "pass",
+      "screenshotFile": "020-dealing-and-bidding-in-standard-skat-bid-ladder-54-to-55.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 55 to 60",
+      "status": "pass",
+      "screenshotFile": "021-dealing-and-bidding-in-standard-skat-bid-ladder-55-to-60.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 60 to 66",
+      "status": "pass",
+      "screenshotFile": "022-dealing-and-bidding-in-standard-skat-bid-ladder-60-to-66.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 66 to 70",
+      "status": "pass",
+      "screenshotFile": "023-dealing-and-bidding-in-standard-skat-bid-ladder-66-to-70.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 70 to 72",
+      "status": "pass",
+      "screenshotFile": "024-dealing-and-bidding-in-standard-skat-bid-ladder-70-to-72.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 72 to 77",
+      "status": "pass",
+      "screenshotFile": "025-dealing-and-bidding-in-standard-skat-bid-ladder-72-to-77.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 77 to 80",
+      "status": "pass",
+      "screenshotFile": "026-dealing-and-bidding-in-standard-skat-bid-ladder-77-to-80.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 80 to 84",
+      "status": "pass",
+      "screenshotFile": "027-dealing-and-bidding-in-standard-skat-bid-ladder-80-to-84.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 84 to 88",
+      "status": "pass",
+      "screenshotFile": "028-dealing-and-bidding-in-standard-skat-bid-ladder-84-to-88.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 88 to 90",
+      "status": "pass",
+      "screenshotFile": "029-dealing-and-bidding-in-standard-skat-bid-ladder-88-to-90.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 90 to 96",
+      "status": "pass",
+      "screenshotFile": "030-dealing-and-bidding-in-standard-skat-bid-ladder-90-to-96.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 96 to 99",
+      "status": "pass",
+      "screenshotFile": "031-dealing-and-bidding-in-standard-skat-bid-ladder-96-to-99.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 99 to 100",
+      "status": "pass",
+      "screenshotFile": "032-dealing-and-bidding-in-standard-skat-bid-ladder-99-to-100.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 100 to 108",
+      "status": "pass",
+      "screenshotFile": "033-dealing-and-bidding-in-standard-skat-bid-ladder-100-to-108.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 108 to 110",
+      "status": "pass",
+      "screenshotFile": "034-dealing-and-bidding-in-standard-skat-bid-ladder-108-to-110.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 110 to 121",
+      "status": "pass",
+      "screenshotFile": "035-dealing-and-bidding-in-standard-skat-bid-ladder-110-to-121.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 121 to 126",
+      "status": "pass",
+      "screenshotFile": "036-dealing-and-bidding-in-standard-skat-bid-ladder-121-to-126.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 126 to 130",
+      "status": "pass",
+      "screenshotFile": "037-dealing-and-bidding-in-standard-skat-bid-ladder-126-to-130.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 130 to 132",
+      "status": "pass",
+      "screenshotFile": "038-dealing-and-bidding-in-standard-skat-bid-ladder-130-to-132.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 132 to 135",
+      "status": "pass",
+      "screenshotFile": "039-dealing-and-bidding-in-standard-skat-bid-ladder-132-to-135.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 135 to 143",
+      "status": "pass",
+      "screenshotFile": "040-dealing-and-bidding-in-standard-skat-bid-ladder-135-to-143.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 143 to 144",
+      "status": "pass",
+      "screenshotFile": "041-dealing-and-bidding-in-standard-skat-bid-ladder-143-to-144.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 144 to 150",
+      "status": "pass",
+      "screenshotFile": "042-dealing-and-bidding-in-standard-skat-bid-ladder-144-to-150.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 150 to 154",
+      "status": "pass",
+      "screenshotFile": "043-dealing-and-bidding-in-standard-skat-bid-ladder-150-to-154.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 154 to 160",
+      "status": "pass",
+      "screenshotFile": "044-dealing-and-bidding-in-standard-skat-bid-ladder-154-to-160.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 160 to 165",
+      "status": "pass",
+      "screenshotFile": "045-dealing-and-bidding-in-standard-skat-bid-ladder-160-to-165.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 165 to 168",
+      "status": "pass",
+      "screenshotFile": "046-dealing-and-bidding-in-standard-skat-bid-ladder-165-to-168.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 168 to 176",
+      "status": "pass",
+      "screenshotFile": "047-dealing-and-bidding-in-standard-skat-bid-ladder-168-to-176.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 176 to 180",
+      "status": "pass",
+      "screenshotFile": "048-dealing-and-bidding-in-standard-skat-bid-ladder-176-to-180.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 180 to 192",
+      "status": "pass",
+      "screenshotFile": "049-dealing-and-bidding-in-standard-skat-bid-ladder-180-to-192.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 192 to 204",
+      "status": "pass",
+      "screenshotFile": "050-dealing-and-bidding-in-standard-skat-bid-ladder-192-to-204.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 204 to 216",
+      "status": "pass",
+      "screenshotFile": "051-dealing-and-bidding-in-standard-skat-bid-ladder-204-to-216.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Bid ladder 216 to 240",
+      "status": "pass",
+      "screenshotFile": "052-dealing-and-bidding-in-standard-skat-bid-ladder-216-to-240.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "A player who cannot support the next bid must pass",
+      "status": "pass",
+      "screenshotFile": "053-dealing-and-bidding-in-standard-skat-a-player-who-cannot-support-the-next-bid-must-pass.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "The highest surviving bidder becomes declarer",
+      "status": "pass",
+      "screenshotFile": "054-dealing-and-bidding-in-standard-skat-the-highest-surviving-bidder-becomes-declarer.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "The auction ends when the last opposing bidder passes",
+      "status": "pass",
+      "screenshotFile": "055-dealing-and-bidding-in-standard-skat-the-auction-ends-when-the-last-opposing-bidder-passes.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "The declarer may choose Grand, Null, or a suit game only",
+      "status": "pass",
+      "screenshotFile": "056-dealing-and-bidding-in-standard-skat-the-declarer-may-choose-grand-null-or-a-suit-game-only.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Suit game base value: Clubs",
+      "status": "pass",
+      "screenshotFile": "057-dealing-and-bidding-in-standard-skat-suit-game-base-value-clubs.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Suit game base value: Spades",
+      "status": "pass",
+      "screenshotFile": "058-dealing-and-bidding-in-standard-skat-suit-game-base-value-spades.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Suit game base value: Hearts",
+      "status": "pass",
+      "screenshotFile": "059-dealing-and-bidding-in-standard-skat-suit-game-base-value-hearts.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Suit game base value: Diamonds",
+      "status": "pass",
+      "screenshotFile": "060-dealing-and-bidding-in-standard-skat-suit-game-base-value-diamonds.png"
+    },
+    {
+      "feature": "Dealing and bidding in standard Skat",
+      "file": "01-dealing-and-bidding.feature",
+      "title": "Hidden information from the skat is not exposed during bidding",
+      "status": "pass",
+      "screenshotFile": "061-dealing-and-bidding-in-standard-skat-hidden-information-from-the-skat-is-not-exposed-during-bidding.png"
+    },
+    {
+      "feature": "Contract and trump behavior",
+      "file": "02-contract-and-trumps.feature",
+      "title": "Suit game trump structure: Clubs",
+      "status": "pass",
+      "screenshotFile": "062-contract-and-trump-behavior-suit-game-trump-structure-clubs.png"
+    },
+    {
+      "feature": "Contract and trump behavior",
+      "file": "02-contract-and-trumps.feature",
+      "title": "Suit game trump structure: Spades",
+      "status": "pass",
+      "screenshotFile": "063-contract-and-trump-behavior-suit-game-trump-structure-spades.png"
+    },
+    {
+      "feature": "Contract and trump behavior",
+      "file": "02-contract-and-trumps.feature",
+      "title": "Suit game trump structure: Hearts",
+      "status": "pass",
+      "screenshotFile": "064-contract-and-trump-behavior-suit-game-trump-structure-hearts.png"
+    },
+    {
+      "feature": "Contract and trump behavior",
+      "file": "02-contract-and-trumps.feature",
+      "title": "Suit game trump structure: Diamonds",
+      "status": "pass",
+      "screenshotFile": "065-contract-and-trump-behavior-suit-game-trump-structure-diamonds.png"
+    },
+    {
+      "feature": "Contract and trump behavior",
+      "file": "02-contract-and-trumps.feature",
+      "title": "The jack order in a suit game is Clubs, Spades, Hearts, Diamonds",
+      "status": "pass",
+      "screenshotFile": "066-contract-and-trump-behavior-the-jack-order-in-a-suit-game-is-clubs-spades-hearts-diamonds.png"
+    },
+    {
+      "feature": "Contract and trump behavior",
+      "file": "02-contract-and-trumps.feature",
+      "title": "The trump suit cards follow the jack order",
+      "status": "pass",
+      "screenshotFile": "067-contract-and-trump-behavior-the-trump-suit-cards-follow-the-jack-order.png"
+    },
+    {
+      "feature": "Contract and trump behavior",
+      "file": "02-contract-and-trumps.feature",
+      "title": "In Grand, only jacks are trumps",
+      "status": "pass",
+      "screenshotFile": "068-contract-and-trump-behavior-in-grand-only-jacks-are-trumps.png"
+    },
+    {
+      "feature": "Contract and trump behavior",
+      "file": "02-contract-and-trumps.feature",
+      "title": "In Grand, the jack order is the only trump order",
+      "status": "pass",
+      "screenshotFile": "069-contract-and-trump-behavior-in-grand-the-jack-order-is-the-only-trump-order.png"
+    },
+    {
+      "feature": "Contract and trump behavior",
+      "file": "02-contract-and-trumps.feature",
+      "title": "In Grand, suit cards retain their suit order outside trump play",
+      "status": "pass",
+      "screenshotFile": "070-contract-and-trump-behavior-in-grand-suit-cards-retain-their-suit-order-outside-trump-play.png"
+    },
+    {
+      "feature": "Contract and trump behavior",
+      "file": "02-contract-and-trumps.feature",
+      "title": "In Null, there are no trumps",
+      "status": "pass",
+      "screenshotFile": "071-contract-and-trump-behavior-in-null-there-are-no-trumps.png"
+    },
+    {
+      "feature": "Contract and trump behavior",
+      "file": "02-contract-and-trumps.feature",
+      "title": "Null order: Clubs",
+      "status": "pass",
+      "screenshotFile": "072-contract-and-trump-behavior-null-order-clubs.png"
+    },
+    {
+      "feature": "Contract and trump behavior",
+      "file": "02-contract-and-trumps.feature",
+      "title": "Null order: Spades",
+      "status": "pass",
+      "screenshotFile": "073-contract-and-trump-behavior-null-order-spades.png"
+    },
+    {
+      "feature": "Contract and trump behavior",
+      "file": "02-contract-and-trumps.feature",
+      "title": "Null order: Hearts",
+      "status": "pass",
+      "screenshotFile": "074-contract-and-trump-behavior-null-order-hearts.png"
+    },
+    {
+      "feature": "Contract and trump behavior",
+      "file": "02-contract-and-trumps.feature",
+      "title": "Null order: Diamonds",
+      "status": "pass",
+      "screenshotFile": "075-contract-and-trump-behavior-null-order-diamonds.png"
+    },
+    {
+      "feature": "Contract and trump behavior",
+      "file": "02-contract-and-trumps.feature",
+      "title": "Null ignores the trump hierarchy from suit and Grand games",
+      "status": "pass",
+      "screenshotFile": "076-contract-and-trump-behavior-null-ignores-the-trump-hierarchy-from-suit-and-grand-games.png"
+    },
+    {
+      "feature": "Contract and trump behavior",
+      "file": "02-contract-and-trumps.feature",
+      "title": "The human hand is sorted by trump groups before plain suits",
+      "status": "pass",
+      "screenshotFile": "077-contract-and-trump-behavior-the-human-hand-is-sorted-by-trump-groups-before-plain-suits.png"
+    },
+    {
+      "feature": "Contract and trump behavior",
+      "file": "02-contract-and-trumps.feature",
+      "title": "The protocol does not reveal hidden discard cards while sorting the hand",
+      "status": "pass",
+      "screenshotFile": "078-contract-and-trump-behavior-the-protocol-does-not-reveal-hidden-discard-cards-while-sorting-the-hand.png"
+    },
+    {
+      "feature": "Trick play and legal move behavior",
+      "file": "03-trick-play.feature",
+      "title": "A player must follow the led suit if they can",
+      "status": "pass",
+      "screenshotFile": "079-trick-play-and-legal-move-behavior-a-player-must-follow-the-led-suit-if-they-can.png"
+    },
+    {
+      "feature": "Trick play and legal move behavior",
+      "file": "03-trick-play.feature",
+      "title": "A player may play any card if they cannot follow the led suit",
+      "status": "pass",
+      "screenshotFile": "080-trick-play-and-legal-move-behavior-a-player-may-play-any-card-if-they-cannot-follow-the-led-suit.png"
+    },
+    {
+      "feature": "Trick play and legal move behavior",
+      "file": "03-trick-play.feature",
+      "title": "In a suit game, trump must be followed if trump is led and available",
+      "status": "pass",
+      "screenshotFile": "081-trick-play-and-legal-move-behavior-in-a-suit-game-trump-must-be-followed-if-trump-is-led-and-available.png"
+    },
+    {
+      "feature": "Trick play and legal move behavior",
+      "file": "03-trick-play.feature",
+      "title": "In Grand, a led jack must be followed by a jack if possible",
+      "status": "pass",
+      "screenshotFile": "082-trick-play-and-legal-move-behavior-in-grand-a-led-jack-must-be-followed-by-a-jack-if-possible.png"
+    },
+    {
+      "feature": "Trick play and legal move behavior",
+      "file": "03-trick-play.feature",
+      "title": "In Null, the led suit must be followed if possible",
+      "status": "pass",
+      "screenshotFile": "083-trick-play-and-legal-move-behavior-in-null-the-led-suit-must-be-followed-if-possible.png"
+    },
+    {
+      "feature": "Trick play and legal move behavior",
+      "file": "03-trick-play.feature",
+      "title": "The highest legal card wins a suit trick",
+      "status": "pass",
+      "screenshotFile": "084-trick-play-and-legal-move-behavior-the-highest-legal-card-wins-a-suit-trick.png"
+    },
+    {
+      "feature": "Trick play and legal move behavior",
+      "file": "03-trick-play.feature",
+      "title": "A trump beats every non-trump in a suit game",
+      "status": "pass",
+      "screenshotFile": "085-trick-play-and-legal-move-behavior-a-trump-beats-every-non-trump-in-a-suit-game.png"
+    },
+    {
+      "feature": "Trick play and legal move behavior",
+      "file": "03-trick-play.feature",
+      "title": "In Grand, the highest jack beats every non-jack",
+      "status": "pass",
+      "screenshotFile": "086-trick-play-and-legal-move-behavior-in-grand-the-highest-jack-beats-every-non-jack.png"
+    },
+    {
+      "feature": "Trick play and legal move behavior",
+      "file": "03-trick-play.feature",
+      "title": "In Null, the highest card of the led suit wins",
+      "status": "pass",
+      "screenshotFile": "087-trick-play-and-legal-move-behavior-in-null-the-highest-card-of-the-led-suit-wins.png"
+    },
+    {
+      "feature": "Trick play and legal move behavior",
+      "file": "03-trick-play.feature",
+      "title": "The trick winner always leads the next trick",
+      "status": "pass",
+      "screenshotFile": "088-trick-play-and-legal-move-behavior-the-trick-winner-always-leads-the-next-trick.png"
+    },
+    {
+      "feature": "Trick play and legal move behavior",
+      "file": "03-trick-play.feature",
+      "title": "An illegal move is rejected and does not advance the trick",
+      "status": "pass",
+      "screenshotFile": "089-trick-play-and-legal-move-behavior-an-illegal-move-is-rejected-and-does-not-advance-the-trick.png"
+    },
+    {
+      "feature": "Trick play and legal move behavior",
+      "file": "03-trick-play.feature",
+      "title": "The play phase ends after ten completed tricks",
+      "status": "pass",
+      "screenshotFile": "090-trick-play-and-legal-move-behavior-the-play-phase-ends-after-ten-completed-tricks.png"
+    },
+    {
+      "feature": "Scoring, winner determination, and result presentation",
+      "file": "04-scoring-and-result.feature",
+      "title": "The full deck always totals 120 eyes",
+      "status": "pass",
+      "screenshotFile": "091-scoring-winner-determination-and-result-presentation-the-full-deck-always-totals-120-eyes.png"
+    },
+    {
+      "feature": "Scoring, winner determination, and result presentation",
+      "file": "04-scoring-and-result.feature",
+      "title": "Trick points plus skat points still total 120 eyes",
+      "status": "pass",
+      "screenshotFile": "092-scoring-winner-determination-and-result-presentation-trick-points-plus-skat-points-still-total-120-eyes.png"
+    },
+    {
+      "feature": "Scoring, winner determination, and result presentation",
+      "file": "04-scoring-and-result.feature",
+      "title": "Declarer wins when reaching 61 eyes or more",
+      "status": "pass",
+      "screenshotFile": "093-scoring-winner-determination-and-result-presentation-declarer-wins-when-reaching-61-eyes-or-more.png"
+    },
+    {
+      "feature": "Scoring, winner determination, and result presentation",
+      "file": "04-scoring-and-result.feature",
+      "title": "Defenders win when the declarer stays at 60 eyes or fewer",
+      "status": "pass",
+      "screenshotFile": "094-scoring-winner-determination-and-result-presentation-defenders-win-when-the-declarer-stays-at-60-eyes-or-fewer.png"
+    },
+    {
+      "feature": "Scoring, winner determination, and result presentation",
+      "file": "04-scoring-and-result.feature",
+      "title": "Schneider is reached at 90 eyes or more for the winning side",
+      "status": "pass",
+      "screenshotFile": "095-scoring-winner-determination-and-result-presentation-schneider-is-reached-at-90-eyes-or-more-for-the-winning-side.png"
+    },
+    {
+      "feature": "Scoring, winner determination, and result presentation",
+      "file": "04-scoring-and-result.feature",
+      "title": "Schwarz is reached when one side takes all tricks",
+      "status": "pass",
+      "screenshotFile": "096-scoring-winner-determination-and-result-presentation-schwarz-is-reached-when-one-side-takes-all-tricks.png"
+    },
+    {
+      "feature": "Scoring, winner determination, and result presentation",
+      "file": "04-scoring-and-result.feature",
+      "title": "The winner is shown automatically after the final trick",
+      "status": "pass",
+      "screenshotFile": "097-scoring-winner-determination-and-result-presentation-the-winner-is-shown-automatically-after-the-final-trick.png"
+    },
+    {
+      "feature": "Scoring, winner determination, and result presentation",
+      "file": "04-scoring-and-result.feature",
+      "title": "The result remains inspectable in the project log",
+      "status": "pass",
+      "screenshotFile": "098-scoring-winner-determination-and-result-presentation-the-result-remains-inspectable-in-the-project-log.png"
+    },
+    {
+      "feature": "Privacy and mobile usability",
+      "file": "05-privacy-and-usability.feature",
+      "title": "The skat discard identities are not revealed before the discard is completed",
+      "status": "pass",
+      "screenshotFile": "099-privacy-and-mobile-usability-the-skat-discard-identities-are-not-revealed-before-the-discard-is-completed.png"
+    },
+    {
+      "feature": "Privacy and mobile usability",
+      "file": "05-privacy-and-usability.feature",
+      "title": "Hidden cards are not exposed through the public result text",
+      "status": "pass",
+      "screenshotFile": "100-privacy-and-mobile-usability-hidden-cards-are-not-exposed-through-the-public-result-text.png"
+    },
+    {
+      "feature": "Privacy and mobile usability",
+      "file": "05-privacy-and-usability.feature",
+      "title": "The human hand remains readable on a narrow screen",
+      "status": "pass",
+      "screenshotFile": "101-privacy-and-mobile-usability-the-human-hand-remains-readable-on-a-narrow-screen.png"
+    },
+    {
+      "feature": "Privacy and mobile usability",
+      "file": "05-privacy-and-usability.feature",
+      "title": "Legal action buttons remain usable on a mobile screen",
+      "status": "pass",
+      "screenshotFile": "102-privacy-and-mobile-usability-legal-action-buttons-remain-usable-on-a-mobile-screen.png"
+    },
+    {
+      "feature": "Privacy and mobile usability",
+      "file": "05-privacy-and-usability.feature",
+      "title": "The run log records phase, blocker, and next action",
+      "status": "pass",
+      "screenshotFile": "103-privacy-and-mobile-usability-the-run-log-records-phase-blocker-and-next-action.png"
+    },
+    {
+      "feature": "Privacy and mobile usability",
+      "file": "05-privacy-and-usability.feature",
+      "title": "A completed feature records the verification outcome",
+      "status": "pass",
+      "screenshotFile": "104-privacy-and-mobile-usability-a-completed-feature-records-the-verification-outcome.png"
+    }
+  ],
+  "parsed": [
+    {
+      "file": "01-dealing-and-bidding.feature",
+      "featureName": "Dealing and bidding in standard Skat",
+      "background": [
+        "a standard three-player Skat table",
+        "the deck is shuffled deterministically for the test seed",
+        "no card has been revealed from the skat"
+      ],
+      "scenarios": [
+        {
+          "title": "Each player receives ten cards and the skat contains two cards",
+          "outline": false,
+          "steps": [
+            "the cards are dealt",
+            "each player has exactly ten cards",
+            "the skat contains exactly two cards",
+            "the full deck still contains 120 eyes internally"
+          ],
+          "examples": []
+        },
+        {
+          "title": "The dealer rotates left after a completed game",
+          "outline": false,
+          "steps": [
+            "one full game has been completed",
+            "the next game starts",
+            "the dealer is the next seat to the left"
+          ],
+          "examples": []
+        },
+        {
+          "title": "The player left of the dealer speaks first",
+          "outline": false,
+          "steps": [
+            "the bidding phase begins",
+            "the first active bidder is the player left of the dealer",
+            "the bidding order proceeds clockwise"
+          ],
+          "examples": []
+        },
+        {
+          "title": "After both opponents finish, the dealer speaks next",
+          "outline": false,
+          "steps": [
+            "both opponents have passed",
+            "bidding continues",
+            "the dealer becomes the next speaker"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 18 to 20",
+          "outline": false,
+          "steps": [
+            "the current bid is 18",
+            "the next bid is proposed",
+            "the next legal bid is 20"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 20 to 22",
+          "outline": false,
+          "steps": [
+            "the current bid is 20",
+            "the next bid is proposed",
+            "the next legal bid is 22"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 22 to 23",
+          "outline": false,
+          "steps": [
+            "the current bid is 22",
+            "the next bid is proposed",
+            "the next legal bid is 23"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 23 to 24",
+          "outline": false,
+          "steps": [
+            "the current bid is 23",
+            "the next bid is proposed",
+            "the next legal bid is 24"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 24 to 27",
+          "outline": false,
+          "steps": [
+            "the current bid is 24",
+            "the next bid is proposed",
+            "the next legal bid is 27"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 27 to 30",
+          "outline": false,
+          "steps": [
+            "the current bid is 27",
+            "the next bid is proposed",
+            "the next legal bid is 30"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 30 to 33",
+          "outline": false,
+          "steps": [
+            "the current bid is 30",
+            "the next bid is proposed",
+            "the next legal bid is 33"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 33 to 35",
+          "outline": false,
+          "steps": [
+            "the current bid is 33",
+            "the next bid is proposed",
+            "the next legal bid is 35"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 35 to 36",
+          "outline": false,
+          "steps": [
+            "the current bid is 35",
+            "the next bid is proposed",
+            "the next legal bid is 36"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 36 to 40",
+          "outline": false,
+          "steps": [
+            "the current bid is 36",
+            "the next bid is proposed",
+            "the next legal bid is 40"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 40 to 44",
+          "outline": false,
+          "steps": [
+            "the current bid is 40",
+            "the next bid is proposed",
+            "the next legal bid is 44"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 44 to 46",
+          "outline": false,
+          "steps": [
+            "the current bid is 44",
+            "the next bid is proposed",
+            "the next legal bid is 46"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 46 to 48",
+          "outline": false,
+          "steps": [
+            "the current bid is 46",
+            "the next bid is proposed",
+            "the next legal bid is 48"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 48 to 50",
+          "outline": false,
+          "steps": [
+            "the current bid is 48",
+            "the next bid is proposed",
+            "the next legal bid is 50"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 50 to 54",
+          "outline": false,
+          "steps": [
+            "the current bid is 50",
+            "the next bid is proposed",
+            "the next legal bid is 54"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 54 to 55",
+          "outline": false,
+          "steps": [
+            "the current bid is 54",
+            "the next bid is proposed",
+            "the next legal bid is 55"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 55 to 60",
+          "outline": false,
+          "steps": [
+            "the current bid is 55",
+            "the next bid is proposed",
+            "the next legal bid is 60"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 60 to 66",
+          "outline": false,
+          "steps": [
+            "the current bid is 60",
+            "the next bid is proposed",
+            "the next legal bid is 66"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 66 to 70",
+          "outline": false,
+          "steps": [
+            "the current bid is 66",
+            "the next bid is proposed",
+            "the next legal bid is 70"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 70 to 72",
+          "outline": false,
+          "steps": [
+            "the current bid is 70",
+            "the next bid is proposed",
+            "the next legal bid is 72"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 72 to 77",
+          "outline": false,
+          "steps": [
+            "the current bid is 72",
+            "the next bid is proposed",
+            "the next legal bid is 77"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 77 to 80",
+          "outline": false,
+          "steps": [
+            "the current bid is 77",
+            "the next bid is proposed",
+            "the next legal bid is 80"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 80 to 84",
+          "outline": false,
+          "steps": [
+            "the current bid is 80",
+            "the next bid is proposed",
+            "the next legal bid is 84"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 84 to 88",
+          "outline": false,
+          "steps": [
+            "the current bid is 84",
+            "the next bid is proposed",
+            "the next legal bid is 88"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 88 to 90",
+          "outline": false,
+          "steps": [
+            "the current bid is 88",
+            "the next bid is proposed",
+            "the next legal bid is 90"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 90 to 96",
+          "outline": false,
+          "steps": [
+            "the current bid is 90",
+            "the next bid is proposed",
+            "the next legal bid is 96"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 96 to 99",
+          "outline": false,
+          "steps": [
+            "the current bid is 96",
+            "the next bid is proposed",
+            "the next legal bid is 99"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 99 to 100",
+          "outline": false,
+          "steps": [
+            "the current bid is 99",
+            "the next bid is proposed",
+            "the next legal bid is 100"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 100 to 108",
+          "outline": false,
+          "steps": [
+            "the current bid is 100",
+            "the next bid is proposed",
+            "the next legal bid is 108"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 108 to 110",
+          "outline": false,
+          "steps": [
+            "the current bid is 108",
+            "the next bid is proposed",
+            "the next legal bid is 110"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 110 to 121",
+          "outline": false,
+          "steps": [
+            "the current bid is 110",
+            "the next bid is proposed",
+            "the next legal bid is 121"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 121 to 126",
+          "outline": false,
+          "steps": [
+            "the current bid is 121",
+            "the next bid is proposed",
+            "the next legal bid is 126"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 126 to 130",
+          "outline": false,
+          "steps": [
+            "the current bid is 126",
+            "the next bid is proposed",
+            "the next legal bid is 130"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 130 to 132",
+          "outline": false,
+          "steps": [
+            "the current bid is 130",
+            "the next bid is proposed",
+            "the next legal bid is 132"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 132 to 135",
+          "outline": false,
+          "steps": [
+            "the current bid is 132",
+            "the next bid is proposed",
+            "the next legal bid is 135"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 135 to 143",
+          "outline": false,
+          "steps": [
+            "the current bid is 135",
+            "the next bid is proposed",
+            "the next legal bid is 143"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 143 to 144",
+          "outline": false,
+          "steps": [
+            "the current bid is 143",
+            "the next bid is proposed",
+            "the next legal bid is 144"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 144 to 150",
+          "outline": false,
+          "steps": [
+            "the current bid is 144",
+            "the next bid is proposed",
+            "the next legal bid is 150"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 150 to 154",
+          "outline": false,
+          "steps": [
+            "the current bid is 150",
+            "the next bid is proposed",
+            "the next legal bid is 154"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 154 to 160",
+          "outline": false,
+          "steps": [
+            "the current bid is 154",
+            "the next bid is proposed",
+            "the next legal bid is 160"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 160 to 165",
+          "outline": false,
+          "steps": [
+            "the current bid is 160",
+            "the next bid is proposed",
+            "the next legal bid is 165"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 165 to 168",
+          "outline": false,
+          "steps": [
+            "the current bid is 165",
+            "the next bid is proposed",
+            "the next legal bid is 168"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 168 to 176",
+          "outline": false,
+          "steps": [
+            "the current bid is 168",
+            "the next bid is proposed",
+            "the next legal bid is 176"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 176 to 180",
+          "outline": false,
+          "steps": [
+            "the current bid is 176",
+            "the next bid is proposed",
+            "the next legal bid is 180"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 180 to 192",
+          "outline": false,
+          "steps": [
+            "the current bid is 180",
+            "the next bid is proposed",
+            "the next legal bid is 192"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 192 to 204",
+          "outline": false,
+          "steps": [
+            "the current bid is 192",
+            "the next bid is proposed",
+            "the next legal bid is 204"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 204 to 216",
+          "outline": false,
+          "steps": [
+            "the current bid is 204",
+            "the next bid is proposed",
+            "the next legal bid is 216"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Bid ladder 216 to 240",
+          "outline": false,
+          "steps": [
+            "the current bid is 216",
+            "the next bid is proposed",
+            "the next legal bid is 240"
+          ],
+          "examples": []
+        },
+        {
+          "title": "A player who cannot support the next bid must pass",
+          "outline": false,
+          "steps": [
+            "the current bid is above a player's ceiling",
+            "that player is asked to continue",
+            "the player passes",
+            "the auction does not assign the contract to that player"
+          ],
+          "examples": []
+        },
+        {
+          "title": "The highest surviving bidder becomes declarer",
+          "outline": false,
+          "steps": [
+            "one player has made the highest legal bid",
+            "the other two players have passed",
+            "the auction resolves",
+            "that player becomes declarer"
+          ],
+          "examples": []
+        },
+        {
+          "title": "The auction ends when the last opposing bidder passes",
+          "outline": false,
+          "steps": [
+            "two players have passed after a winning bid",
+            "the bidding phase resolves",
+            "the contract is assigned",
+            "the game continues to contract selection"
+          ],
+          "examples": []
+        },
+        {
+          "title": "The declarer may choose Grand, Null, or a suit game only",
+          "outline": false,
+          "steps": [
+            "the declarer has won the auction",
+            "the declarer chooses a game type",
+            "the available choices are Grand, Null, Clubs, Spades, Hearts, and Diamonds",
+            "no other game type is offered"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Suit game base value: Clubs",
+          "outline": false,
+          "steps": [
+            "the declarer chooses a suit game with trump suit Clubs",
+            "the contract is created",
+            "the base value is 12"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Suit game base value: Spades",
+          "outline": false,
+          "steps": [
+            "the declarer chooses a suit game with trump suit Spades",
+            "the contract is created",
+            "the base value is 11"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Suit game base value: Hearts",
+          "outline": false,
+          "steps": [
+            "the declarer chooses a suit game with trump suit Hearts",
+            "the contract is created",
+            "the base value is 10"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Suit game base value: Diamonds",
+          "outline": false,
+          "steps": [
+            "the declarer chooses a suit game with trump suit Diamonds",
+            "the contract is created",
+            "the base value is 9"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Hidden information from the skat is not exposed during bidding",
+          "outline": false,
+          "steps": [
+            "the skat cards are still hidden",
+            "bidding is displayed to the human",
+            "the hidden skat identities are not shown",
+            "the protocol contains no discard details"
+          ],
+          "examples": []
+        }
+      ]
+    },
+    {
+      "file": "02-contract-and-trumps.feature",
+      "featureName": "Contract and trump behavior",
+      "background": [
+        "a declared contract exists",
+        "the game uses a deterministic test seed"
+      ],
+      "scenarios": [
+        {
+          "title": "Suit game trump structure: Clubs",
+          "outline": false,
+          "steps": [
+            "the contract is a suit game with trump suit Clubs",
+            "trump strength is calculated",
+            "the jacks are higher than every card of the trump suit",
+            "the trump suit cards are higher than every non-trump suit card"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Suit game trump structure: Spades",
+          "outline": false,
+          "steps": [
+            "the contract is a suit game with trump suit Spades",
+            "trump strength is calculated",
+            "the jacks are higher than every card of the trump suit",
+            "the trump suit cards are higher than every non-trump suit card"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Suit game trump structure: Hearts",
+          "outline": false,
+          "steps": [
+            "the contract is a suit game with trump suit Hearts",
+            "trump strength is calculated",
+            "the jacks are higher than every card of the trump suit",
+            "the trump suit cards are higher than every non-trump suit card"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Suit game trump structure: Diamonds",
+          "outline": false,
+          "steps": [
+            "the contract is a suit game with trump suit Diamonds",
+            "trump strength is calculated",
+            "the jacks are higher than every card of the trump suit",
+            "the trump suit cards are higher than every non-trump suit card"
+          ],
+          "examples": []
+        },
+        {
+          "title": "The jack order in a suit game is Clubs, Spades, Hearts, Diamonds",
+          "outline": false,
+          "steps": [
+            "the contract is a suit game",
+            "two or more jacks are compared",
+            "Clubs is higher than Spades",
+            "Spades is higher than Hearts",
+            "Hearts is higher than Diamonds"
+          ],
+          "examples": []
+        },
+        {
+          "title": "The trump suit cards follow the jack order",
+          "outline": false,
+          "steps": [
+            "the contract is a suit game with Hearts as trump",
+            "Hearts cards are ordered for play",
+            "Ace is higher than Ten",
+            "Ten is higher than King",
+            "King is higher than Queen",
+            "Queen is higher than Nine",
+            "Nine is higher than Eight",
+            "Eight is higher than Seven"
+          ],
+          "examples": []
+        },
+        {
+          "title": "In Grand, only jacks are trumps",
+          "outline": false,
+          "steps": [
+            "the contract is Grand",
+            "trump candidates are listed",
+            "only the four jacks are trumps",
+            "every non-jack card is a plain suit card"
+          ],
+          "examples": []
+        },
+        {
+          "title": "In Grand, the jack order is the only trump order",
+          "outline": false,
+          "steps": [
+            "the contract is Grand",
+            "two jacks are compared",
+            "Clubs is higher than Spades",
+            "Spades is higher than Hearts",
+            "Hearts is higher than Diamonds"
+          ],
+          "examples": []
+        },
+        {
+          "title": "In Grand, suit cards retain their suit order outside trump play",
+          "outline": false,
+          "steps": [
+            "the contract is Grand",
+            "Hearts cards are sorted within their suit",
+            "Ace is higher than Ten",
+            "Ten is higher than King",
+            "King is higher than Queen",
+            "Queen is higher than Nine",
+            "Nine is higher than Eight",
+            "Eight is higher than Seven"
+          ],
+          "examples": []
+        },
+        {
+          "title": "In Null, there are no trumps",
+          "outline": false,
+          "steps": [
+            "the contract is Null",
+            "trump candidates are listed",
+            "no card is a trump"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Null order: Clubs",
+          "outline": false,
+          "steps": [
+            "the contract is Null",
+            "the cards of Clubs are ordered",
+            "the order is Ace, King, Queen, Jack, Ten, Nine, Eight, Seven"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Null order: Spades",
+          "outline": false,
+          "steps": [
+            "the contract is Null",
+            "the cards of Spades are ordered",
+            "the order is Ace, King, Queen, Jack, Ten, Nine, Eight, Seven"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Null order: Hearts",
+          "outline": false,
+          "steps": [
+            "the contract is Null",
+            "the cards of Hearts are ordered",
+            "the order is Ace, King, Queen, Jack, Ten, Nine, Eight, Seven"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Null order: Diamonds",
+          "outline": false,
+          "steps": [
+            "the contract is Null",
+            "the cards of Diamonds are ordered",
+            "the order is Ace, King, Queen, Jack, Ten, Nine, Eight, Seven"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Null ignores the trump hierarchy from suit and Grand games",
+          "outline": false,
+          "steps": [
+            "the contract is Null",
+            "a jack is compared with another card",
+            "the jack is not treated as trump",
+            "only the lead suit can win the trick"
+          ],
+          "examples": []
+        },
+        {
+          "title": "The human hand is sorted by trump groups before plain suits",
+          "outline": false,
+          "steps": [
+            "the human hand contains trumps and plain suits",
+            "the hand is rendered",
+            "trumps appear before non-trumps",
+            "the order inside each group is deterministic"
+          ],
+          "examples": []
+        },
+        {
+          "title": "The protocol does not reveal hidden discard cards while sorting the hand",
+          "outline": false,
+          "steps": [
+            "the skat phase has not been completed",
+            "the hand is rendered and logged",
+            "no hidden discard identities are revealed",
+            "the log stays privacy-safe"
+          ],
+          "examples": []
+        }
+      ]
+    },
+    {
+      "file": "03-trick-play.feature",
+      "featureName": "Trick play and legal move behavior",
+      "background": [
+        "a valid contract has been chosen",
+        "the play phase has started"
+      ],
+      "scenarios": [
+        {
+          "title": "A player must follow the led suit if they can",
+          "outline": false,
+          "steps": [
+            "a plain suit card has been led",
+            "the next player holds at least one card of that suit",
+            "the next player chooses a card",
+            "only cards of the led suit are legal"
+          ],
+          "examples": []
+        },
+        {
+          "title": "A player may play any card if they cannot follow the led suit",
+          "outline": false,
+          "steps": [
+            "a plain suit card has been led",
+            "the next player holds no card of that suit",
+            "the next player chooses a card",
+            "any card from the hand is legal"
+          ],
+          "examples": []
+        },
+        {
+          "title": "In a suit game, trump must be followed if trump is led and available",
+          "outline": false,
+          "steps": [
+            "a trump card has been led in a suit game",
+            "the next player holds at least one trump",
+            "the next player chooses a card",
+            "only trumps are legal"
+          ],
+          "examples": []
+        },
+        {
+          "title": "In Grand, a led jack must be followed by a jack if possible",
+          "outline": false,
+          "steps": [
+            "a jack has been led in Grand",
+            "the next player holds at least one jack",
+            "the next player chooses a card",
+            "only jacks are legal"
+          ],
+          "examples": []
+        },
+        {
+          "title": "In Null, the led suit must be followed if possible",
+          "outline": false,
+          "steps": [
+            "a card of Diamonds has been led in Null",
+            "the next player holds at least one Diamond",
+            "the next player chooses a card",
+            "only Diamonds are legal"
+          ],
+          "examples": []
+        },
+        {
+          "title": "The highest legal card wins a suit trick",
+          "outline": false,
+          "steps": [
+            "Hearts are led in a suit game",
+            "the trick contains multiple Hearts cards",
+            "the trick is resolved",
+            "the highest Heart among the legal cards wins"
+          ],
+          "examples": []
+        },
+        {
+          "title": "A trump beats every non-trump in a suit game",
+          "outline": false,
+          "steps": [
+            "a suit game trick contains both trump and plain suit cards",
+            "the trick is resolved",
+            "the highest trump wins"
+          ],
+          "examples": []
+        },
+        {
+          "title": "In Grand, the highest jack beats every non-jack",
+          "outline": false,
+          "steps": [
+            "a Grand trick contains jacks and suit cards",
+            "the trick is resolved",
+            "the highest jack wins"
+          ],
+          "examples": []
+        },
+        {
+          "title": "In Null, the highest card of the led suit wins",
+          "outline": false,
+          "steps": [
+            "Diamonds are led in Null",
+            "the trick contains multiple Diamonds cards",
+            "the trick is resolved",
+            "the highest Diamond wins"
+          ],
+          "examples": []
+        },
+        {
+          "title": "The trick winner always leads the next trick",
+          "outline": false,
+          "steps": [
+            "a trick has just been resolved",
+            "the next trick starts",
+            "the winner of the previous trick leads"
+          ],
+          "examples": []
+        },
+        {
+          "title": "An illegal move is rejected and does not advance the trick",
+          "outline": false,
+          "steps": [
+            "only one suit is legal",
+            "the player attempts a different suit",
+            "the move is rejected",
+            "the trick state does not advance",
+            "the legal move hint remains visible"
+          ],
+          "examples": []
+        },
+        {
+          "title": "The play phase ends after ten completed tricks",
+          "outline": false,
+          "steps": [
+            "nine tricks have already been completed",
+            "the tenth trick is resolved",
+            "the play phase ends",
+            "the game can move to the result phase"
+          ],
+          "examples": []
+        }
+      ]
+    },
+    {
+      "file": "04-scoring-and-result.feature",
+      "featureName": "Scoring, winner determination, and result presentation",
+      "background": [
+        "a full game has been played to completion",
+        "every card point is accounted for internally"
+      ],
+      "scenarios": [
+        {
+          "title": "The full deck always totals 120 eyes",
+          "outline": false,
+          "steps": [
+            "the points of all cards are summed",
+            "the total is 120 eyes"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Trick points plus skat points still total 120 eyes",
+          "outline": false,
+          "steps": [
+            "some cards are in tricks",
+            "some cards are in the skat",
+            "all points are summed together",
+            "the total is 120 eyes"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Declarer wins when reaching 61 eyes or more",
+          "outline": false,
+          "steps": [
+            "the declarer has 61 eyes",
+            "the result is calculated",
+            "the declarer wins"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Defenders win when the declarer stays at 60 eyes or fewer",
+          "outline": false,
+          "steps": [
+            "the declarer has 60 eyes",
+            "the result is calculated",
+            "the defenders win"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Schneider is reached at 90 eyes or more for the winning side",
+          "outline": false,
+          "steps": [
+            "one side has 90 eyes",
+            "the result summary is calculated",
+            "Schneider is reported for that side"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Schwarz is reached when one side takes all tricks",
+          "outline": false,
+          "steps": [
+            "one side has taken all ten tricks",
+            "the result summary is calculated",
+            "Schwarz is reported for that side"
+          ],
+          "examples": []
+        },
+        {
+          "title": "The winner is shown automatically after the final trick",
+          "outline": false,
+          "steps": [
+            "the tenth trick has been resolved",
+            "the result phase opens",
+            "the winner is shown without manual prompting",
+            "the final eyes are displayed"
+          ],
+          "examples": []
+        },
+        {
+          "title": "The result remains inspectable in the project log",
+          "outline": false,
+          "steps": [
+            "the game has finished",
+            "the run is recorded",
+            "the phase log contains the final outcome",
+            "the next action is clear"
+          ],
+          "examples": []
+        }
+      ]
+    },
+    {
+      "file": "05-privacy-and-usability.feature",
+      "featureName": "Privacy and mobile usability",
+      "background": [
+        "the app is opened on a mobile viewport",
+        "the current run is being observed by the human"
+      ],
+      "scenarios": [
+        {
+          "title": "The skat discard identities are not revealed before the discard is completed",
+          "outline": false,
+          "steps": [
+            "the skat phase has not been completed",
+            "the log is inspected",
+            "no hidden discard identity is visible"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Hidden cards are not exposed through the public result text",
+          "outline": false,
+          "steps": [
+            "the game is still in progress",
+            "the public status is rendered",
+            "the hidden skat cards are not disclosed"
+          ],
+          "examples": []
+        },
+        {
+          "title": "The human hand remains readable on a narrow screen",
+          "outline": false,
+          "steps": [
+            "the viewport is smartphone-sized",
+            "the hand is displayed",
+            "cards remain visible without horizontal overflow",
+            "the order stays deterministic"
+          ],
+          "examples": []
+        },
+        {
+          "title": "Legal action buttons remain usable on a mobile screen",
+          "outline": false,
+          "steps": [
+            "the play phase is active",
+            "the available actions are rendered",
+            "the important actions are reachable on a narrow display",
+            "disabled actions are clearly disabled"
+          ],
+          "examples": []
+        },
+        {
+          "title": "The run log records phase, blocker, and next action",
+          "outline": false,
+          "steps": [
+            "a meaningful phase transition happened",
+            "the log is inspected",
+            "the current phase is visible",
+            "any blocker is visible",
+            "the next action is visible"
+          ],
+          "examples": []
+        },
+        {
+          "title": "A completed feature records the verification outcome",
+          "outline": false,
+          "steps": [
+            "the feature slice has been verified",
+            "the handoff note is written",
+            "the verification result is recorded",
+            "follow-up work remains explicit"
+          ],
+          "examples": []
+        }
+      ]
+    }
+  ]
+}

@@ -14,10 +14,13 @@ Last run: 2026-05-07
 ## BDD specification suite
 - Source: `tests/bdd/*.feature`
 - Executable runner: `tests/bdd/runner.mjs`
+- Browser screenshot runner: `tests/bdd/browser-protocol-screenshots.mjs`
 - Coverage summary: `tests/bdd/COVERAGE.md`
 - Browser-readable protocol: `tests/protocol.html`
+- Browser report: `tests/browser-bdd-report.html`
 - Machine-readable status: `tests/protocol.json`
-- Status: executable now, with the current snapshot rendered into the HTML protocol
+- Screenshot artifact: `tests/browser-artifacts/screenshots/*.png`
+- Status: executable now, with the current snapshot rendered into the HTML protocol and browser-captured screenshots
 
 ## Unit coverage (`tests/skat.unit.test.mjs`)
 1. **Sort order in suit contracts**
