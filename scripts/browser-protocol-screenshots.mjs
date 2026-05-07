@@ -29,6 +29,37 @@ function uniqueFeatureOrder(cases) {
   return order;
 }
 
+function parseFeatureSpecs() {
+  const files = Array.from(new Set(readReport().cases.map((row) => row.feature)));
+  return files.map((feature) => {
+    const file = readFileSync(join(root, 'tests/bdd', `${featureToFile(feature)}`), 'utf8');
+    const scenarios = [];
+    let current = null;
+    for (const line of file.split(/\r?\n/)) {
+      const scenario = line.match(/^\s*Scenario(?: Outline)?:\s*(.+)$/);
+      if (scenario) {
+        current = { title: scenario[1].trim(), steps: [] };
+        scenarios.push(current);
+        continue;
+      }
+      const step = line.match(/^\s*(Given|When|Then|And|But)\s+(.+)$/);
+      if (step && current) current.steps.push(`${step[1]} ${step[2].trim()}`);
+    }
+    return { feature, scenarios };
+  });
+}
+
+function featureToFile(feature) {
+  const mapping = {
+    'Dealing and bidding in standard Skat': '01-dealing-and-bidding.feature',
+    'Contract and trump behavior': '02-contract-and-trumps.feature',
+    'Trick play and legal move behavior': '03-trick-play.feature',
+    'Scoring, winner determination, and result presentation': '04-scoring-and-result.feature',
+    'Privacy and mobile usability': '05-privacy-and-usability.feature',
+  };
+  return mapping[feature];
+}
+
 function startServer() {
   return spawn(process.execPath, ['tests/serve.mjs'], {
     cwd: root,
@@ -70,8 +101,11 @@ function renderBrowserReport(report) {
       <div class="thumb-grid">
         ${rows.map((row) => `
           <figure>
-            <img src="./browser-artifacts/screenshots/${row.screenshotFile}" alt="${row.title}">
-            <figcaption>${row.title}</figcaption>
+            <img src="./browser-artifacts/screenshots/${row.stepScreenshots?.[0]?.screenshotFile ?? row.screenshotFile}" alt="${row.title}">
+            <figcaption>
+              <strong>${row.title}</strong><br>
+              ${(row.stepScreenshots ?? []).map((step) => `<div>${step.stepText}<br><code>${step.screenshotFile}</code></div>`).join('')}
+            </figcaption>
           </figure>
         `).join('\n')}
       </div>
@@ -150,36 +184,45 @@ async function main() {
       if (!grouped.has(row.feature)) grouped.set(row.feature, []);
       grouped.get(row.feature).push(row);
     }
+    const featureSpecs = parseFeatureSpecs();
+    const specByFeature = new Map(featureSpecs.map((spec) => [spec.feature, spec]));
 
     const outputCases = [];
     for (const [familyIndex, feature] of featureOrder.entries()) {
       const rows = grouped.get(feature) ?? [];
+      const spec = specByFeature.get(feature);
+      const scenarioSpecs = spec?.scenarios ?? [];
       for (const [rowIndex, row] of rows.entries()) {
         const item = page.locator('article.family').nth(familyIndex).locator('li').nth(rowIndex);
         await item.scrollIntoViewIfNeeded();
-        await page.evaluate(({ feature, title }) => {
-          document.querySelectorAll('[data-bdd-active="true"]').forEach((el) => el.removeAttribute('data-bdd-active'));
-          const families = Array.from(document.querySelectorAll('article.family'));
-          for (const family of families) {
-            const head = family.querySelector('h2');
-            if (head?.textContent?.trim() === feature) {
-              const li = Array.from(family.querySelectorAll('li')).find((node) => node.textContent?.includes(title));
-              if (li) li.setAttribute('data-bdd-active', 'true');
-              break;
+        const steps = scenarioSpecs[rowIndex]?.steps ?? ['Given the case is visible'];
+        const stepScreenshots = [];
+        for (const [stepIndex, stepText] of steps.entries()) {
+          await page.evaluate(({ feature, title, stepText }) => {
+            document.querySelectorAll('[data-bdd-active="true"]').forEach((el) => el.removeAttribute('data-bdd-active'));
+            const families = Array.from(document.querySelectorAll('article.family'));
+            for (const family of families) {
+              const head = family.querySelector('h2');
+              if (head?.textContent?.trim() === feature) {
+                const li = Array.from(family.querySelectorAll('li')).find((node) => node.textContent?.includes(title));
+                if (li) li.setAttribute('data-bdd-active', 'true');
+                break;
+              }
             }
-          }
-          let chip = document.querySelector('.bdd-chip');
-          if (!chip) {
-            chip = document.createElement('div');
-            chip.className = 'bdd-chip';
-            document.body.appendChild(chip);
-          }
-          chip.textContent = `${feature} — ${title}`;
-        }, { feature, title: row.title });
+            let chip = document.querySelector('.bdd-chip');
+            if (!chip) {
+              chip = document.createElement('div');
+              chip.className = 'bdd-chip';
+              document.body.appendChild(chip);
+            }
+            chip.textContent = `${feature} — ${title} — ${stepText}`;
+          }, { feature, title: row.title, stepText });
 
-        const screenshotFile = `${String(outputCases.length + 1).padStart(3, '0')}-${slugify(feature)}-${slugify(row.title)}.png`;
-        await page.screenshot({ path: join(screenshotDir, screenshotFile), fullPage: false });
-        outputCases.push({ ...row, screenshotFile });
+          const screenshotFile = `${String(outputCases.length + 1).padStart(3, '0')}-${String(stepIndex + 1).padStart(2, '0')}-${slugify(feature)}-${slugify(row.title)}-${slugify(stepText)}.png`;
+          await page.screenshot({ path: join(screenshotDir, screenshotFile), fullPage: false });
+          stepScreenshots.push({ stepText, screenshotFile });
+        }
+        outputCases.push({ ...row, stepScreenshots });
       }
     }
 
