@@ -16,11 +16,11 @@ const report = JSON.parse(readFileSync(reportPath, 'utf8'));
 
 test('the static protocol page reflects the current rule coverage snapshot', () => {
   assert.match(html, /<title>SimpleSkat Test Protocol<\/title>/);
-  assert.match(html, /PASS · 103\/103 cases green/);
-  assert.match(html, /Feature files[\s\S]*>5<\/div>/);
-  assert.match(html, /Executable cases[\s\S]*>103<\/div>/);
-  assert.match(html, /Passing cases[\s\S]*>103<\/div>/);
-  assert.match(html, /Failing cases[\s\S]*>0<\/div>/);
+  assert.ok(html.includes(`PASS · ${report.summary.passCount}/${report.summary.scenarioCount} cases green`));
+  assert.ok(html.includes(`<div class="label">Feature files</div><div class="value">${report.summary.featureCount}</div>`));
+  assert.ok(html.includes(`<div class="label">Executable cases</div><div class="value">${report.summary.scenarioCount}</div>`));
+  assert.ok(html.includes(`<div class="label">Passing cases</div><div class="value">${report.summary.passCount}</div>`));
+  assert.ok(html.includes(`<div class="label">Failing cases</div><div class="value">${report.summary.failCount}</div>`));
 
   for (const feature of report.cases.map((row) => row.feature).filter((value, index, array) => array.indexOf(value) === index)) {
     assert.match(html, new RegExp(feature.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));

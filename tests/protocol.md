@@ -3,11 +3,13 @@
 Last run: 2026-05-07
 
 ## Summary
-- Total executable tests last run: 13
+- Test scripts last run: 4
 - Unit tests: 11
+- BDD cases: 104
 - Protocol page test: 1
 - Browser execution test: 1
 - Result: all passed
+- Fresh publish marker: 2026-05-07 11:05 Europe/Berlin
 
 ## BDD specification suite
 - Source: `tests/bdd/*.feature`
@@ -55,4 +57,4 @@ Last run: 2026-05-07
 
 ## Current gaps
 - No separate machine-readable per-run archive yet.
-- No scenario-by-scenario BDD report beyond the test file and this protocol summary.
+- No scenario-by-scenario BDD report beyond the executable test runner and this protocol summary.

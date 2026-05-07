@@ -19,67 +19,255 @@ Feature: Dealing and bidding in standard Skat
       Then the dealer is the next seat to the left
 
   Rule: Bidding order and legal bids
-    Scenario: Vorhand starts the auction
+    Scenario: The player left of the dealer speaks first
       When the bidding phase begins
-      Then the first active bidder is Vorhand
+      Then the first active bidder is the player left of the dealer
       And the bidding order proceeds clockwise
 
-    Scenario Outline: The auction only accepts the official bid ladder
-      Given the current bid is <currentBid>
+    Scenario: After both opponents finish, the dealer speaks next
+      Given both opponents have passed
+      When bidding continues
+      Then the dealer becomes the next speaker
+
+    Scenario: Bid ladder 18 to 20
+      Given the current bid is 18
       When the next bid is proposed
-      Then the next legal bid is <nextBid>
+      Then the next legal bid is 20
 
-      Examples:
-        | currentBid | nextBid |
-        | 18         | 20      |
-        | 20         | 22      |
-        | 22         | 23      |
-        | 23         | 24      |
-        | 24         | 27      |
-        | 27         | 30      |
-        | 30         | 33      |
-        | 33         | 35      |
-        | 35         | 36      |
-        | 36         | 40      |
-        | 40         | 44      |
-        | 44         | 46      |
-        | 46         | 48      |
-        | 48         | 50      |
-        | 50         | 54      |
-        | 54         | 55      |
-        | 55         | 60      |
-        | 60         | 66      |
-        | 66         | 70      |
-        | 70         | 72      |
-        | 72         | 77      |
-        | 77         | 80      |
-        | 80         | 84      |
-        | 84         | 88      |
-        | 88         | 90      |
-        | 90         | 96      |
-        | 96         | 99      |
-        | 99         | 100     |
-        | 100        | 108     |
-        | 108        | 110     |
-        | 110        | 121     |
-        | 121        | 126     |
-        | 126        | 130     |
-        | 130        | 132     |
-        | 132        | 135     |
-        | 135        | 143     |
-        | 143        | 144     |
-        | 144        | 150     |
-        | 150        | 154     |
-        | 154        | 160     |
-        | 160        | 165     |
-        | 165        | 168     |
-        | 168        | 176     |
-        | 176        | 180     |
-        | 180        | 192     |
-        | 192        | 204     |
-        | 204        | 216     |
-        | 216        | 240     |
+    Scenario: Bid ladder 20 to 22
+      Given the current bid is 20
+      When the next bid is proposed
+      Then the next legal bid is 22
 
+    Scenario: Bid ladder 22 to 23
+      Given the current bid is 22
+      When the next bid is proposed
+      Then the next legal bid is 23
+
+    Scenario: Bid ladder 23 to 24
+      Given the current bid is 23
+      When the next bid is proposed
+      Then the next legal bid is 24
+
+    Scenario: Bid ladder 24 to 27
+      Given the current bid is 24
+      When the next bid is proposed
+      Then the next legal bid is 27
+
+    Scenario: Bid ladder 27 to 30
+      Given the current bid is 27
+      When the next bid is proposed
+      Then the next legal bid is 30
+
+    Scenario: Bid ladder 30 to 33
+      Given the current bid is 30
+      When the next bid is proposed
+      Then the next legal bid is 33
+
+    Scenario: Bid ladder 33 to 35
+      Given the current bid is 33
+      When the next bid is proposed
+      Then the next legal bid is 35
+
+    Scenario: Bid ladder 35 to 36
+      Given the current bid is 35
+      When the next bid is proposed
+      Then the next legal bid is 36
+
+    Scenario: Bid ladder 36 to 40
+      Given the current bid is 36
+      When the next bid is proposed
+      Then the next legal bid is 40
+
+    Scenario: Bid ladder 40 to 44
+      Given the current bid is 40
+      When the next bid is proposed
+      Then the next legal bid is 44
+
+    Scenario: Bid ladder 44 to 46
+      Given the current bid is 44
+      When the next bid is proposed
+      Then the next legal bid is 46
+
+    Scenario: Bid ladder 46 to 48
+      Given the current bid is 46
+      When the next bid is proposed
+      Then the next legal bid is 48
+
+    Scenario: Bid ladder 48 to 50
+      Given the current bid is 48
+      When the next bid is proposed
+      Then the next legal bid is 50
+
+    Scenario: Bid ladder 50 to 54
+      Given the current bid is 50
+      When the next bid is proposed
+      Then the next legal bid is 54
+
+    Scenario: Bid ladder 54 to 55
+      Given the current bid is 54
+      When the next bid is proposed
+      Then the next legal bid is 55
+
+    Scenario: Bid ladder 55 to 60
+      Given the current bid is 55
+      When the next bid is proposed
+      Then the next legal bid is 60
+
+    Scenario: Bid ladder 60 to 66
+      Given the current bid is 60
+      When the next bid is proposed
+      Then the next legal bid is 66
+
+    Scenario: Bid ladder 66 to 70
+      Given the current bid is 66
+      When the next bid is proposed
+      Then the next legal bid is 70
+
+    Scenario: Bid ladder 70 to 72
+      Given the current bid is 70
+      When the next bid is proposed
+      Then the next legal bid is 72
+
+    Scenario: Bid ladder 72 to 77
+      Given the current bid is 72
+      When the next bid is proposed
+      Then the next legal bid is 77
+
+    Scenario: Bid ladder 77 to 80
+      Given the current bid is 77
+      When the next bid is proposed
+      Then the next legal bid is 80
+
+    Scenario: Bid ladder 80 to 84
+      Given the current bid is 80
+      When the next bid is proposed
+      Then the next legal bid is 84
+
+    Scenario: Bid ladder 84 to 88
+      Given the current bid is 84
+      When the next bid is proposed
+      Then the next legal bid is 88
+
+    Scenario: Bid ladder 88 to 90
+      Given the current bid is 88
+      When the next bid is proposed
+      Then the next legal bid is 90
+
+    Scenario: Bid ladder 90 to 96
+      Given the current bid is 90
+      When the next bid is proposed
+      Then the next legal bid is 96
+
+    Scenario: Bid ladder 96 to 99
+      Given the current bid is 96
+      When the next bid is proposed
+      Then the next legal bid is 99
+
+    Scenario: Bid ladder 99 to 100
+      Given the current bid is 99
+      When the next bid is proposed
+      Then the next legal bid is 100
+
+    Scenario: Bid ladder 100 to 108
+      Given the current bid is 100
+      When the next bid is proposed
+      Then the next legal bid is 108
+
+    Scenario: Bid ladder 108 to 110
+      Given the current bid is 108
+      When the next bid is proposed
+      Then the next legal bid is 110
+
+    Scenario: Bid ladder 110 to 121
+      Given the current bid is 110
+      When the next bid is proposed
+      Then the next legal bid is 121
+
+    Scenario: Bid ladder 121 to 126
+      Given the current bid is 121
+      When the next bid is proposed
+      Then the next legal bid is 126
+
+    Scenario: Bid ladder 126 to 130
+      Given the current bid is 126
+      When the next bid is proposed
+      Then the next legal bid is 130
+
+    Scenario: Bid ladder 130 to 132
+      Given the current bid is 130
+      When the next bid is proposed
+      Then the next legal bid is 132
+
+    Scenario: Bid ladder 132 to 135
+      Given the current bid is 132
+      When the next bid is proposed
+      Then the next legal bid is 135
+
+    Scenario: Bid ladder 135 to 143
+      Given the current bid is 135
+      When the next bid is proposed
+      Then the next legal bid is 143
+
+    Scenario: Bid ladder 143 to 144
+      Given the current bid is 143
+      When the next bid is proposed
+      Then the next legal bid is 144
+
+    Scenario: Bid ladder 144 to 150
+      Given the current bid is 144
+      When the next bid is proposed
+      Then the next legal bid is 150
+
+    Scenario: Bid ladder 150 to 154
+      Given the current bid is 150
+      When the next bid is proposed
+      Then the next legal bid is 154
+
+    Scenario: Bid ladder 154 to 160
+      Given the current bid is 154
+      When the next bid is proposed
+      Then the next legal bid is 160
+
+    Scenario: Bid ladder 160 to 165
+      Given the current bid is 160
+      When the next bid is proposed
+      Then the next legal bid is 165
+
+    Scenario: Bid ladder 165 to 168
+      Given the current bid is 165
+      When the next bid is proposed
+      Then the next legal bid is 168
+
+    Scenario: Bid ladder 168 to 176
+      Given the current bid is 168
+      When the next bid is proposed
+      Then the next legal bid is 176
+
+    Scenario: Bid ladder 176 to 180
+      Given the current bid is 176
+      When the next bid is proposed
+      Then the next legal bid is 180
+
+    Scenario: Bid ladder 180 to 192
+      Given the current bid is 180
+      When the next bid is proposed
+      Then the next legal bid is 192
+
+    Scenario: Bid ladder 192 to 204
+      Given the current bid is 192
+      When the next bid is proposed
+      Then the next legal bid is 204
+
+    Scenario: Bid ladder 204 to 216
+      Given the current bid is 204
+      When the next bid is proposed
+      Then the next legal bid is 216
+
+    Scenario: Bid ladder 216 to 240
+      Given the current bid is 216
+      When the next bid is proposed
+      Then the next legal bid is 240
     Scenario: A player who cannot support the next bid must pass
       Given the current bid is above a player's ceiling
       When that player is asked to continue
@@ -98,25 +286,31 @@ Feature: Dealing and bidding in standard Skat
       Then the contract is assigned
       And the game continues to contract selection
 
-  Rule: Contract selection after winning the auction
     Scenario: The declarer may choose Grand, Null, or a suit game only
       Given the declarer has won the auction
       When the declarer chooses a game type
       Then the available choices are Grand, Null, Clubs, Spades, Hearts, and Diamonds
       And no other game type is offered
 
-    Scenario Outline: Each suit game has the correct base value
-      Given the declarer chooses a suit game with trump suit <suit>
+    Scenario: Suit game base value: Clubs
+      Given the declarer chooses a suit game with trump suit Clubs
       When the contract is created
-      Then the base value is <baseValue>
+      Then the base value is 12
 
-      Examples:
-        | suit     | baseValue |
-        | Clubs    | 12        |
-        | Spades   | 11        |
-        | Hearts   | 10        |
-        | Diamonds | 9         |
+    Scenario: Suit game base value: Spades
+      Given the declarer chooses a suit game with trump suit Spades
+      When the contract is created
+      Then the base value is 11
 
+    Scenario: Suit game base value: Hearts
+      Given the declarer chooses a suit game with trump suit Hearts
+      When the contract is created
+      Then the base value is 10
+
+    Scenario: Suit game base value: Diamonds
+      Given the declarer chooses a suit game with trump suit Diamonds
+      When the contract is created
+      Then the base value is 9
     Scenario: Hidden information from the skat is not exposed during bidding
       Given the skat cards are still hidden
       When bidding is displayed to the human

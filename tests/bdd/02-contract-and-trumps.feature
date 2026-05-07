@@ -6,19 +6,29 @@ Feature: Contract and trump behavior
     And the game uses a deterministic test seed
 
   Rule: Suit game trump structure
-    Scenario Outline: In a suit game, the selected suit becomes trump together with all jacks
-      Given the contract is a suit game with trump suit <suit>
+    Scenario: Suit game trump structure: Clubs
+      Given the contract is a suit game with trump suit Clubs
       When trump strength is calculated
       Then the jacks are higher than every card of the trump suit
       And the trump suit cards are higher than every non-trump suit card
 
-      Examples:
-        | suit     |
-        | Clubs    |
-        | Spades   |
-        | Hearts   |
-        | Diamonds |
+    Scenario: Suit game trump structure: Spades
+      Given the contract is a suit game with trump suit Spades
+      When trump strength is calculated
+      Then the jacks are higher than every card of the trump suit
+      And the trump suit cards are higher than every non-trump suit card
 
+    Scenario: Suit game trump structure: Hearts
+      Given the contract is a suit game with trump suit Hearts
+      When trump strength is calculated
+      Then the jacks are higher than every card of the trump suit
+      And the trump suit cards are higher than every non-trump suit card
+
+    Scenario: Suit game trump structure: Diamonds
+      Given the contract is a suit game with trump suit Diamonds
+      When trump strength is calculated
+      Then the jacks are higher than every card of the trump suit
+      And the trump suit cards are higher than every non-trump suit card
     Scenario: The jack order in a suit game is Clubs, Spades, Hearts, Diamonds
       Given the contract is a suit game
       When two or more jacks are compared
@@ -66,25 +76,31 @@ Feature: Contract and trump behavior
       When trump candidates are listed
       Then no card is a trump
 
-    Scenario Outline: In Null, each suit follows the Null order A K Q J 10 9 8 7
+    Scenario: Null order: Clubs
       Given the contract is Null
-      When the cards of <suit> are ordered
+      When the cards of Clubs are ordered
       Then the order is Ace, King, Queen, Jack, Ten, Nine, Eight, Seven
 
-      Examples:
-        | suit     |
-        | Clubs    |
-        | Spades   |
-        | Hearts   |
-        | Diamonds |
+    Scenario: Null order: Spades
+      Given the contract is Null
+      When the cards of Spades are ordered
+      Then the order is Ace, King, Queen, Jack, Ten, Nine, Eight, Seven
 
+    Scenario: Null order: Hearts
+      Given the contract is Null
+      When the cards of Hearts are ordered
+      Then the order is Ace, King, Queen, Jack, Ten, Nine, Eight, Seven
+
+    Scenario: Null order: Diamonds
+      Given the contract is Null
+      When the cards of Diamonds are ordered
+      Then the order is Ace, King, Queen, Jack, Ten, Nine, Eight, Seven
     Scenario: Null ignores the trump hierarchy from suit and Grand games
       Given the contract is Null
       When a jack is compared with another card
       Then the jack is not treated as trump
       And only the lead suit can win the trick
 
-  Rule: Hand sorting and visibility
     Scenario: The human hand is sorted by trump groups before plain suits
       Given the human hand contains trumps and plain suits
       When the hand is rendered

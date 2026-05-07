@@ -226,6 +226,18 @@ function runScenario(file, title, values) {
 
 function runDealingAndBidding(env, title, values) {
   const game = env.game;
+  const ladderMatch = title.match(/^Bid ladder (\d+) to (\d+)$/);
+  if (ladderMatch) {
+    assert.equal(nextBidValue(Number(ladderMatch[1])), Number(ladderMatch[2]));
+    return;
+  }
+  const suitBaseMatch = title.match(/^Suit game base value: (Clubs|Spades|Hearts|Diamonds)$/);
+  if (suitBaseMatch) {
+    const contract = makeContract('suit', suitBaseMatch[1]);
+    const expected = { Clubs: 12, Spades: 11, Hearts: 10, Diamonds: 9 }[suitBaseMatch[1]];
+    assert.equal(contract.valueBase, expected);
+    return;
+  }
   switch (title) {
     case 'Each player receives ten cards and the skat contains two cards':
       assert.equal(game.seats[0].hand.length, 10);
@@ -240,12 +252,18 @@ function runDealingAndBidding(env, title, values) {
       assert.equal(next.gameNo, 2);
       return;
     }
-    case 'Vorhand starts the auction':
-      assert.equal((game.dealerIndex + 1) % 3, 1);
+    case 'The player left of the dealer speaks first':
+      assert.equal(game.seatName((game.dealerIndex + 1) % 3), 'KI links');
       return;
-    case 'The auction only accepts the official bid ladder':
-      assert.equal(nextBidValue(Number(values.currentBid)), Number(values.nextBid));
+    case 'After both opponents finish, the dealer speaks next': {
+      const state = createGame('BDD-order');
+      state.currentTurnIndex = 1;
+      state.activeBidders = [false, false, true];
+      state.advanceBidding();
+      assert.equal(state.declarerIndex, 2);
+      assert.equal(state.phase, 'contract');
       return;
+    }
     case 'A player who cannot support the next bid must pass': {
       const state = createGame('BDD-pass');
       state.currentBid = 240;
@@ -294,11 +312,6 @@ function runDealingAndBidding(env, title, values) {
       assert.deepEqual(options, ['Grand', 'Null', 'Kreuz', 'Pik', 'Herz', 'Karo']);
       return;
     }
-    case 'Each suit game has the correct base value': {
-      const contract = makeContract('suit', values.suit);
-      assert.equal(contract.valueBase, Number(values.baseValue));
-      return;
-    }
     case 'Hidden information from the skat is not exposed during bidding': {
       const skatShorts = game.skat.map((c) => c.short);
       const log = game.log.join('\n');
@@ -312,19 +325,21 @@ function runDealingAndBidding(env, title, values) {
 
 function runContractAndTrumps(env, title, values) {
   const game = env.game;
-  switch (title) {
-    case 'In a suit game, the selected suit becomes trump together with all jacks': {
-      const contract = makeContract('suit', values.suit);
-      for (const suit of ['Clubs', 'Spades', 'Hearts', 'Diamonds']) {
-        const jack = card(`B${suitSymbol(suit)}`);
-        assert.equal(isTrump(jack, contract), true);
-      }
-      const trumpSuitCards = deck.filter((c) => c.suitKey === values.suit && c.rankKey !== 'J');
-      const offSuit = deck.filter((c) => c.suitKey !== values.suit && c.rankKey !== 'J');
-      assert.ok(trumpSuitCards.every((c) => isTrump(c, contract)));
-      assert.ok(offSuit.every((c) => !isTrump(c, contract)));
-      return;
+  const suitStructureMatch = title.match(/^Suit game trump structure: (Clubs|Spades|Hearts|Diamonds)$/);
+  if (suitStructureMatch) {
+    const suit = suitStructureMatch[1];
+    const contract = makeContract('suit', suit);
+    for (const trumpSuit of ['Clubs', 'Spades', 'Hearts', 'Diamonds']) {
+      const jack = card(`B${suitSymbol(trumpSuit)}`);
+      assert.equal(isTrump(jack, contract), true);
     }
+    const trumpSuitCards = deck.filter((c) => c.suitKey === suit && c.rankKey !== 'J');
+    const offSuit = deck.filter((c) => c.suitKey !== suit && c.rankKey !== 'J');
+    assert.ok(trumpSuitCards.every((c) => isTrump(c, contract)));
+    assert.ok(offSuit.every((c) => !isTrump(c, contract)));
+    return;
+  }
+  switch (title) {
     case 'The jack order in a suit game is Clubs, Spades, Hearts, Diamonds': {
       const contract = makeContract('suit', 'Hearts');
       const jacks = cards(['B♣', 'B♠', 'B♥', 'B♦']);
@@ -358,9 +373,14 @@ function runContractAndTrumps(env, title, values) {
       assert.equal(deck.filter((c) => isTrump(c, contract)).length, 0);
       return;
     }
-    case 'In Null, each suit follows the Null order A K Q J 10 9 8 7': {
+    case 'Null order: Clubs':
+    case 'Null order: Spades':
+    case 'Null order: Hearts':
+    case 'Null order: Diamonds': {
       const contract = makeContract('null');
-      assert.deepEqual(shortList(sortForUI(cards(['A♣', 'K♣', 'D♣', 'B♣', '10♣', '9♣', '8♣', '7♣']), contract)), ['A♣', 'K♣', 'D♣', 'B♣', '10♣', '9♣', '8♣', '7♣']);
+      const suit = title.split(': ')[1];
+      const symbolMap = { Clubs: '♣', Spades: '♠', Hearts: '♥', Diamonds: '♦' };
+      assert.deepEqual(shortList(sortForUI(cards([`A${symbolMap[suit]}`, `K${symbolMap[suit]}`, `D${symbolMap[suit]}`, `B${symbolMap[suit]}`, `10${symbolMap[suit]}`, `9${symbolMap[suit]}`, `8${symbolMap[suit]}`, `7${symbolMap[suit]}`]), contract)), [`A${symbolMap[suit]}`, `K${symbolMap[suit]}`, `D${symbolMap[suit]}`, `B${symbolMap[suit]}`, `10${symbolMap[suit]}`, `9${symbolMap[suit]}`, `8${symbolMap[suit]}`, `7${symbolMap[suit]}`]);
       return;
     }
     case 'Null ignores the trump hierarchy from suit and Grand games': {
