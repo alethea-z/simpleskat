@@ -7,6 +7,7 @@ const REPORT_JSON = resolve(ROOT, 'tests/browser-bdd-report.json');
 const REPORT_HTML = resolve(ROOT, 'tests/browser-bdd-report.html');
 const FEATURES_DIR = resolve(ROOT, 'tests/cucumber/features');
 const FALLBACK_BASE = '/simpleskat/tests';
+const IMAGE_ROOT = resolve(ROOT, 'tests');
 
 function parseLog() {
   if (!existsSync(LOG_PATH)) return [];
@@ -22,6 +23,13 @@ function escapeHtml(text) {
     .replaceAll('<', '&lt;')
     .replaceAll('>', '&gt;')
     .replaceAll('"', '&quot;');
+}
+
+function screenshotDataUri(screenshotFile) {
+  const sourcePath = resolve(IMAGE_ROOT, screenshotFile);
+  if (!existsSync(sourcePath)) return null;
+  const bytes = readFileSync(sourcePath);
+  return `data:image/png;base64,${bytes.toString('base64')}`;
 }
 
 function parseFeatureFile(path) {
@@ -137,11 +145,11 @@ function buildReport(records) {
         ${scenario.background.length ? `<div class="steps" style="margin-bottom:12px;">${scenario.background.map((specStep, index) => {
           const step = scenario.steps[index];
           const keywordClass = String(specStep.keyword || 'given').toLowerCase();
-          const screenshot = step?.screenshotFile ? `/${FALLBACK_BASE}/${step.screenshotFile}` : '';
+          const screenshot = step?.screenshotFile ? screenshotDataUri(step.screenshotFile) : '';
           const rel = step?.screenshotFile ? `./${step.screenshotFile}` : '';
           return `<article class="step">
               <div><span class="kw ${keywordClass}">${escapeHtml(specStep.keyword)}</span><strong>${escapeHtml(specStep.text)}</strong></div>
-              ${step?.screenshotFile ? `<div class="muted">${escapeHtml(step.status)} · ${escapeHtml(step.screenshotFile)}</div><img src="${escapeHtml(rel)}" data-fallback="${escapeHtml(screenshot)}" onerror="if(!this.dataset.fallbackUsed){this.dataset.fallbackUsed='1';this.src=this.dataset.fallback;}" alt="${escapeHtml(specStep.keyword)} ${escapeHtml(specStep.text)}"><a class="step-link" href="${escapeHtml(rel)}">Open screenshot</a>` : ''}
+              ${step?.screenshotFile ? `<div class="muted">${escapeHtml(step.status)} · ${escapeHtml(step.screenshotFile)}</div><img src="${screenshot ? screenshot : escapeHtml(rel)}" alt="${escapeHtml(specStep.keyword)} ${escapeHtml(specStep.text)}"><a class="step-link" href="${screenshot ? screenshot : escapeHtml(rel)}" target="_blank" rel="noopener">Open screenshot</a>` : ''}
             </article>`;
         }).join('')}</div>` : ''}
         ${scenario.scenarioSpec?.steps?.length ? `<div class="muted" style="margin-bottom:8px;">Scenario steps</div>` : ''}
@@ -149,14 +157,14 @@ function buildReport(records) {
           ${(scenario.scenarioSpec?.steps || scenario.steps.map((_, i) => ({ keyword: 'Then', text: `Step ${i + 1}` }))).map((specStep, index) => {
             const step = scenario.steps[index + scenario.background.length];
             const keywordClass = String(specStep.keyword || 'then').toLowerCase();
-            const screenshot = step?.screenshotFile ? `/${FALLBACK_BASE}/${step.screenshotFile}` : '';
+            const screenshot = step?.screenshotFile ? screenshotDataUri(step.screenshotFile) : '';
             const rel = step?.screenshotFile ? `./${step.screenshotFile}` : '';
             return `
             <article class="step">
               <div><span class="kw ${keywordClass}">${escapeHtml(specStep.keyword || 'Then')}</span><strong>${escapeHtml(specStep.text || step?.stepText || '')}</strong></div>
               <div class="muted">${escapeHtml(step?.status || '')} · ${escapeHtml(step?.screenshotFile || '')}</div>
-              ${step?.screenshotFile ? `<img src="${escapeHtml(rel)}" data-fallback="${escapeHtml(screenshot)}" onerror="if(!this.dataset.fallbackUsed){this.dataset.fallbackUsed='1';this.src=this.dataset.fallback;}" alt="${escapeHtml(specStep.keyword || '')} ${escapeHtml(specStep.text || step?.stepText || '')}">
-              <a class="step-link" href="${escapeHtml(rel)}">Open screenshot</a>` : ''}
+              ${step?.screenshotFile ? `<img src="${screenshot ? screenshot : escapeHtml(rel)}" alt="${escapeHtml(specStep.keyword || '')} ${escapeHtml(specStep.text || step?.stepText || '')}">
+              <a class="step-link" href="${screenshot ? screenshot : escapeHtml(rel)}" target="_blank" rel="noopener">Open screenshot</a>` : ''}
             </article>`;
           }).join('')}
         </div>
